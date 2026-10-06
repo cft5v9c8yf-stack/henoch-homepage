@@ -42,6 +42,8 @@
   --link: #7a5d00;
   --sun: #c49c00;
   --way: #e8e3db;
+  --gold-soft: #f7efd6;
+  --icon-gold: #c49c00;
 
   --serif: 'Literata', Georgia, 'Times New Roman', serif;
   --sans: 'Source Sans 3', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
@@ -64,6 +66,8 @@
     --link: #e0b93a;
     --sun: #d9ae00;
     --way: #242832;
+    --gold-soft: #2e2a1c;
+    --icon-gold: #d9ae00;
   }
 }
 
@@ -164,6 +168,49 @@ h2 {
 .areas div:last-child { border-bottom: 0; }
 .areas dt { font-family: var(--sans); font-weight: 600; color: var(--rubric); }
 .areas dd { margin: 0; }
+
+/* Was Henoch ist: Kacheln mit den Symbolen der App */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tiles li {
+  background: var(--sheet);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 16px;
+  min-width: 0;
+}
+.tiles li:first-child { grid-column: span 2; }
+.tile-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 12px;
+  border-radius: 50%;
+  background: var(--gold-soft);
+  color: var(--icon-gold);
+}
+.tile-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.tiles h3 { margin: 0 0 4px; font-size: 1.05rem; font-weight: 600; hyphens: auto; }
+.tiles p { margin: 0; font-size: 0.95rem; line-height: 1.45; color: var(--muted); hyphens: auto; }
+@media (min-width: 720px) {
+  .tiles { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+  .tiles li { padding: 20px; }
+}
 
 /* Karten */
 .cards { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
