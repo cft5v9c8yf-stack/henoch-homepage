@@ -180,10 +180,24 @@ h2 {
   font-size: 1rem;
   font-weight: 600;
 }
-.principles strong { display: block; margin-bottom: 4px; }
+/* Grundsätze: Titel links, Text rechts, wie die Liste der Bereiche */
+.principles { margin: 0; padding: 0; list-style: none; }
+.principles li {
+  display: grid;
+  grid-template-columns: 15em 1fr;
+  gap: 4px 24px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.principles li:first-child { padding-top: 4px; }
+.principles li:last-child { border-bottom: 0; }
+.principles h3 { margin: 0; font-size: 1.05rem; font-weight: 600; line-height: 1.4; }
+.principles p { margin: 0; max-width: 38em; }
+@media (max-width: 640px) {
+  .principles li { grid-template-columns: 1fr; }
+}
 
 @media (min-width: 720px) {
-  .principles { grid-template-columns: repeat(3, 1fr); }
   .install { grid-template-columns: repeat(2, 1fr); }
 }
 
