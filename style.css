@@ -237,6 +237,9 @@ footer a { color: inherit; }
 }
 .page { padding: 24px 0 48px; }
 .page h1 { margin: 0 0 18px; font-size: 1.8rem; font-weight: 600; }
+.page h2 { margin: 32px 0 8px; font-size: 1.15rem; }
+.page p { margin: 0 0 12px; }
+.page .stand { margin-top: 32px; font-family: var(--sans); font-size: 0.9rem; color: var(--muted); }
 
 @media (max-width: 480px) {
   body { font-size: 16.5px; }
