@@ -1,0 +1,245 @@
+/* Farben und Schriften wie in der App (tagzeiten: src/styles/tokens.css).
+   Rot (--rubric) nur für Rubriken, Interaktives in --accent. */
+
+@font-face {
+  font-family: 'Literata';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/literata-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Literata';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/literata-latin-600-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/source-sans-3-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('fonts/source-sans-3-latin-600-normal.woff2') format('woff2');
+}
+
+:root {
+  --paper: #f6f4ef;
+  --sheet: #ffffff;
+  --ink: #1d2330;
+  --muted: #636a76;
+  --rule: #ddd8ce;
+  --rubric: #8c2f2f;
+  --accent: #2e4057;
+  --on-accent: #ffffff;
+  --link: #7a5d00;
+  --sun: #c49c00;
+  --way: #e8e3db;
+
+  --serif: 'Literata', Georgia, 'Times New Roman', serif;
+  --sans: 'Source Sans 3', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --radius: 12px;
+  --gutter: 18px;
+
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #131a26;
+    --sheet: #1b2432;
+    --ink: #e8e3d8;
+    --muted: #9aa2af;
+    --rule: #2c3748;
+    --rubric: #e07a6e;
+    --accent: #d8d0c0;
+    --on-accent: #131a26;
+    --link: #e0b93a;
+    --sun: #d9ae00;
+    --way: #242832;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+a { color: var(--link); text-underline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 max(var(--gutter), env(safe-area-inset-right)) 0 max(var(--gutter), env(safe-area-inset-left));
+}
+.wrap-wide { max-width: 880px; }
+
+section { padding: 40px 0; border-top: 1px solid var(--rule); }
+
+h2 {
+  margin: 0 0 18px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--rubric);
+}
+
+/* Kopf: Sonne über dem Horizont, wie der Begrüßungsschirm der App */
+.hero { padding: env(safe-area-inset-top) 0 48px; }
+
+/* Horizont und Linien laufen über die ganze Breite; die Lagen entsprechen
+   den y-Werten im SVG (455, 475, 507, 557, 636, 750 von 160 bis 860). */
+.horizon {
+  --h: min(78vw, 440px);
+  height: var(--h);
+  margin-top: 24px;
+  background:
+    linear-gradient(var(--ink), var(--ink)) 0 calc(var(--h) * 295 / 700 - 1px) / 100% 2px,
+    linear-gradient(var(--rule), var(--rule)) 0 calc(var(--h) * 315 / 700) / 100% 1.5px,
+    linear-gradient(var(--rule), var(--rule)) 0 calc(var(--h) * 347 / 700) / 100% 1.5px,
+    linear-gradient(var(--rule), var(--rule)) 0 calc(var(--h) * 397 / 700) / 100% 1.5px,
+    linear-gradient(var(--rule), var(--rule)) 0 calc(var(--h) * 476 / 700) / 100% 1.5px,
+    linear-gradient(var(--rule), var(--rule)) 0 calc(var(--h) * 590 / 700) / 100% 1.5px;
+  background-repeat: no-repeat;
+}
+.horizon svg { display: block; width: var(--h); height: var(--h); margin: 0 auto; }
+.horizon .bogen { fill: none; stroke: var(--rule); stroke-width: 3; }
+.horizon .sonne { fill: var(--sun); }
+.horizon .weg { stop-color: var(--way); }
+.horizon .rand { stop-color: var(--ink); }
+.horizon .aus { stop-opacity: 0; }
+
+.hero h1 {
+  margin: 28px 0 0;
+  font-size: clamp(3.6rem, 17vw, 6rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+.hero p {
+  margin: 12px 0 28px;
+  max-width: 28em;
+  font-size: clamp(1.25rem, 5vw, 1.6rem);
+  line-height: 1.3;
+}
+
+.button {
+  display: inline-block;
+  min-height: 48px;
+  padding: 12px 28px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.button:hover { filter: brightness(1.1); }
+
+/* Was Henoch ist */
+.areas { margin: 0; }
+.areas div {
+  display: grid;
+  grid-template-columns: 9.5em 1fr;
+  gap: 4px 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.areas div:last-child { border-bottom: 0; }
+.areas dt { font-family: var(--sans); font-weight: 600; color: var(--rubric); }
+.areas dd { margin: 0; }
+
+/* Karten */
+.cards { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.card {
+  background: var(--sheet);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+}
+.card p { margin: 0; }
+.card h3 {
+  margin: 0 0 6px;
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.principles strong { display: block; margin-bottom: 4px; }
+
+@media (min-width: 720px) {
+  .principles { grid-template-columns: repeat(3, 1fr); }
+  .install { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Bildschirmfotos: am Handy seitlich wischbar */
+.shots {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(200px, 1fr);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 6px;
+}
+.shots img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 390 / 844;
+  border: 1px solid var(--rule);
+  border-radius: 20px;
+  background: var(--sheet);
+  scroll-snap-align: center;
+}
+
+/* Fuß */
+footer {
+  padding: 28px 0 calc(36px + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer a { color: inherit; }
+
+/* Unterseiten */
+.page-head { padding: calc(28px + env(safe-area-inset-top)) 0 8px; }
+.page-head a {
+  font-family: var(--sans);
+  font-weight: 600;
+  color: var(--ink);
+  text-decoration: none;
+}
+.page { padding: 24px 0 48px; }
+.page h1 { margin: 0 0 18px; font-size: 1.8rem; font-weight: 600; }
+
+@media (max-width: 480px) {
+  body { font-size: 16.5px; }
+  section { padding: 32px 0; }
+  .areas div { grid-template-columns: 1fr; }
+}

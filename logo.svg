@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="236 160 700 700">
+  <!-- Henoch: Sonne über dem Horizont, ein Weg führt zu ihr -->
+  <style>
+    .rule { stroke: #DDD8CE; }
+    .ink { stroke: #1D2330; }
+    .sun { fill: #C49C00; }
+    .way-top { stop-color: #E8E3DB; }
+    .way-end { stop-color: #E8E3DB; stop-opacity: 0; }
+    .ink-top { stop-color: #1D2330; }
+    .ink-end { stop-color: #1D2330; stop-opacity: 0; }
+    @media (prefers-color-scheme: dark) {
+      .rule { stroke: #2C3748; }
+      .ink { stroke: #E8E3D8; }
+      .sun { fill: #D9AE00; }
+      .way-top, .way-end { stop-color: #242832; }
+      .ink-top, .ink-end { stop-color: #E8E3D8; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="way" x1="0" y1="455" x2="0" y2="850" gradientUnits="userSpaceOnUse">
+      <stop offset="0.55" class="way-top"/>
+      <stop offset="1" class="way-end"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="455" x2="0" y2="850" gradientUnits="userSpaceOnUse">
+      <stop offset="0.6" class="ink-top"/>
+      <stop offset="1" class="ink-end"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke-width="3" class="rule">
+    <path d="M443 455a143 143 0 0 1 286 0M390 455a196 196 0 0 1 392 0M336 455a250 250 0 0 1 500 0"/>
+    <path d="M236 475H936M236 507H936M236 557H936M236 636H936M236 750H936"/>
+  </g>
+  <path class="sun" d="M500 455a86 86 0 0 1 172 0Z"/>
+  <path d="M586 455C560 540 530 610 440 680C370 735 270 790 195 850H905C870 760 820 700 740 630C660 560 600 520 586 455Z" fill="url(#way)"/>
+  <path d="M195 850C270 790 370 735 440 680C530 610 560 540 586 455C600 520 660 560 740 630C820 700 870 760 905 850" fill="none" stroke="url(#edge)" stroke-width="4"/>
+  <path class="ink" d="M236 455H936" stroke-width="4"/>
+</svg>
