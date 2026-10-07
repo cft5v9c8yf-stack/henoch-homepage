@@ -1,6 +1,6 @@
 # Testbericht Homepage henoch.app – Version 1.0
 
-Stand: 7. Oktober 2026 · Phase 1 (Bestandsaufnahme) · geprüft: `main` bei `fdb5640`
+Stand: 8. Oktober 2026 · Phase 1 (Bestandsaufnahme) und Phase 2 (Korrekturen) · geprüft: `main` bei `fdb5640`
 
 ## Kurzfazit
 
@@ -15,7 +15,42 @@ Checkliste für deinen eigenen Test.
 
 ---
 
-## Gefundene Punkte
+## Status nach Phase 2 (8. Oktober 2026, Zweig `claude/release-1.0`)
+
+Alle Punkte unter „Wichtig“ sind behoben, dazu S2 und S3. Jede Korrektur ist ein eigener Commit und wurde danach erneut geprüft.
+**Noch nichts ist live:** `main` ist unverändert, es gibt keinen Tag und kein Deployment.
+
+| Nr. | Status | Was geändert wurde | Commit |
+|---|---|---|---|
+| W1 | ✅ behoben | Alle drei Bildschirmfotos hell und dunkel aus der App 0.40.0, alle vom selben Tag. Beschreibung von Bild 1 an den Inhalt angepasst. | `7d456f4` |
+| W2 | ✅ behoben | `404.html` im Henoch-Design mit „Zur Startseite“. Absolute Pfade, damit sie auch bei verschachtelten Adressen richtig aussieht (getestet unter `/a/b/`). | `2be539a` |
+| W3 | ✅ behoben | Datenschutz nennt IONOS SE als E-Mail-Anbieter. Grundlage: Die MX-Einträge bei IONOS zeigen auf mx00/mx01.ionos.de. | `fee18bd` |
+| W4 | ✅ behoben | Gebetsordnung: „Auf Wunsch mit der geistlichen Waffenrüstung aus Epheser 6.“ Arena: „Im Gebet ringen, Treffen mit Brüdern vorbereiten und in einer Wüstenzeit von 40 oder 90 Tagen dranbleiben.“ | `6e180d3` |
+| W5 | ✅ behoben | Der Link zu GitHub in der Datenschutzerklärung öffnet in neuem Tab. „Henoch öffnen“ bleibt im selben Tab. | `0f5e1f7` |
+| W6 | ✅ behoben | Startseite und Open Graph mit dem ersten Satz der Einleitung, Impressum und Datenschutz mit je einer eigenen Beschreibung. | `f5bc280` |
+| W7 | ✅ behoben | `robots.txt` und `sitemap.xml` (nur die Startseite, weil Impressum und Datenschutz auf `noindex` stehen). | `a133538` |
+| W8 | ✅ behoben | iPhone: „… dann „Zum Home-Bildschirm“ und „Hinzufügen“.“ | `106b411` |
+| S2 | ✅ behoben | Die Bildreihe ist per Tastatur fokussierbar und scrollbar. | `2cec2d7` |
+| S3 | ✅ behoben | `og:image:alt` ergänzt. | `1dc5565` |
+| – | ✅ behoben | Bei der Nachprüfung gefunden: „1. Mose 5,24“, „Epheser 6“ und „90 Tagen“ brachen am Zeilenende auseinander. Jetzt mit geschützten Leerzeichen. | `3ac3b83` |
+| S1, S4–S7 | ⏳ offen für 1.1 | WebP-Bilder, einheitliches Symbol mit der App, Aufräumen der Zweige, Samsung Internet, Hinweise zur App | – |
+
+**Nachprüfung nach allen Korrekturen (lokal):**
+- Lighthouse Startseite: 100/100/100/100 auf Handy und Rechner.
+- Impressum, Datenschutz und 404: Performance, Barrierefreiheit und Best Practices je 100. SEO niedriger nur wegen des gewollten `noindex`.
+- iPhone SE (hoch und quer), 360 px, Tablet (hoch und quer), 1440 px, hell und dunkel, alle vier Seiten: kein seitliches Scrollen, keine fehlenden Bilder, genau eine H1, keine Konsolenfehler, keine fremden Server.
+- HTML-Prüfung (html-validate): nur der Hinweis, dass `<!doctype html>` kleingeschrieben ist. Das ist gültiges HTML5 und bleibt so.
+
+**Vorbereitet für Phase 3 (noch nicht veröffentlicht):** Versionsvermerk `<!-- Henoch Homepage 1.0.0 -->` in `index.html`, `CHANGELOG.md` mit Eintrag 1.0.0, neue `README.md`.
+
+**Bitte vor dem Livegang entscheiden:**
+1. Die Texte aus W4 (Waffenrüstung, Wüstenzeit) passen? Sie lassen sich mit einem Satz zurücknehmen.
+2. Dieser Testbericht liegt im Hauptordner. Nach dem Merge wäre er unter henoch.app/TESTBERICHT-HOMEPAGE.md öffentlich abrufbar, ebenso README und CHANGELOG. Mein Vorschlag: den Testbericht vor dem Merge entfernen. Er bleibt auf dem Zweig `claude/release-1.0` und im Verlauf erhalten.
+3. Im Kundenbereich von IONOS den Vertrag zur Auftragsverarbeitung (AVV) abschließen, falls noch nicht geschehen. Das ist ein Klick unter „Verträge“.
+
+---
+
+## Gefundene Punkte (Phase 1)
 
 ### Kritisch (blockiert die Veröffentlichung)
 
