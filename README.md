@@ -1,7 +1,26 @@
-# henoch-homepage
+# Henoch – Homepage
 
-Homepage für Henoch unter https://henoch.app – reines HTML und CSS, ohne Build-Schritt.
+Version 1.0.0 · live unter **https://henoch.app**
 
-- Link zur App: nur in `index.html` (Knopf „Henoch öffnen“).
-- Bildschirmfotos: `bilder/bildschirmfoto-1.jpg` bis `-3.jpg` (780 × 1540).
-- Schriften: Literata und Source Sans 3 (SIL Open Font License, siehe `fonts/`).
+Die Homepage stellt Henoch vor, einen Begleiter für Männer, die ihren Tag mit Gott beginnen und beschließen wollen, und führt zur App unter **https://mein.henoch.app**.
+
+Reines HTML und CSS, ohne Build-Schritt und ohne Abhängigkeiten. Veröffentlicht über GitHub Pages aus `main` (Datei `CNAME`: `henoch.app`).
+
+## Aufbau
+
+| Datei | Inhalt |
+|---|---|
+| `index.html` | Startseite. Der Link zur App steht nur hier (Knopf „Henoch öffnen“). |
+| `impressum.html`, `datenschutz.html`, `404.html` | Unterseiten |
+| `style.css` | Farben, Schriften und Layout wie in der App, hell und dunkel |
+| `kontakt.js` | setzt die Kontaktadresse erst im Browser zusammen |
+| `fonts/` | Literata und Source Sans 3 (SIL Open Font License) |
+| `bilder/` | Bildschirmfotos der App, je hell und `-dunkel` (780 × 1540, JPG) |
+| `og.png`, `favicon.svg`, `apple-touch-icon.png`, `logo.svg` | Vorschaubild, Symbole, Kopfgrafik |
+| `robots.txt`, `sitemap.xml` | für Suchmaschinen |
+
+Änderungen stehen in `CHANGELOG.md`.
+
+## Kontakt
+
+kontakt@henoch.app
