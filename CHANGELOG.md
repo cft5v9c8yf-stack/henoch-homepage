@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.1.1 – 9. Oktober 2026
+
+- Kachel „Gebetskammer“ statt „Tagebuch“, wie in Henoch 1.0. Die Kachel „Arena“ nennt Eisenschmiede und Wüstenzeit.
+
 ## 1.1.0 – 9. Oktober 2026
 
 - Neu: die Anleitung „Henoch Schritt für Schritt“ unter henoch.app/anleitung/, mit Bildschirmfotos aus der App. Verlinkt unter „So installierst du Henoch“ und im Fuß jeder Seite.
