@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.1.0 – 9. Oktober 2026
+
+- Neu: die Anleitung „Henoch Schritt für Schritt“ unter henoch.app/anleitung/, mit Bildschirmfotos aus der App. Verlinkt unter „So installierst du Henoch“ und im Fuß jeder Seite.
+
 ## 1.0.0 – 8. Oktober 2026
 
 Erste offizielle Fassung der Homepage.
