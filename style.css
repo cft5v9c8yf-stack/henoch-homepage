@@ -360,7 +360,6 @@ footer a { color: inherit; }
 .text .dates { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; margin: 12px 0; font-family: var(--sans); }
 .text .dates dt { font-weight: 600; font-variant-numeric: tabular-nums; }
 .text .dates dd { margin: 0; }
-.text .cta { margin: 32px 0 20px; text-align: center; }
 .text .sources { font: 400 0.85rem/1.5 var(--sans); color: var(--muted); }
 
 /* Neuigkeiten auf der Startseite: höchstens fünf Beiträge und das Archiv */
