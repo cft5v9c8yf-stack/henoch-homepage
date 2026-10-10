@@ -251,8 +251,6 @@ h2 {
   .install { grid-template-columns: repeat(2, 1fr); }
 }
 
-.more { margin: 18px 0 0; font-family: var(--sans); font-weight: 600; }
-
 /* Bildschirmfotos: am Handy seitlich wischbar */
 .shots {
   display: grid;
