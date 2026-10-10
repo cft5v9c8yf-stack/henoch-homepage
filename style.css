@@ -313,7 +313,7 @@ footer a { color: inherit; }
   .areas div { grid-template-columns: 1fr; }
 }
 
-/* Mehr: Übersicht und Textseiten (Lesespalte wie die Anleitung) */
+/* Neuigkeiten: Kacheln, Archiv und Beitragsseiten (Lesespalte wie die Anleitung) */
 .wrap-text { max-width: 720px; }
 .crumb { font-family: var(--sans); color: var(--muted); }
 .crumb a { color: var(--muted); font-weight: 400; }
@@ -365,6 +365,23 @@ footer a { color: inherit; }
 .text .cta { margin: 32px 0 20px; text-align: center; }
 .text .sources { font: 400 0.85rem/1.5 var(--sans); color: var(--muted); }
 
-/* Hinweis auf eine Zeit des Kirchenjahres auf der Startseite */
-.season { margin: 22px 0 0; font-family: var(--sans); font-weight: 600; }
-.season a { color: var(--link); }
+/* Neuigkeiten auf der Startseite: höchstens fünf Beiträge und das Archiv */
+.news { display: grid; grid-template-columns: 1fr; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.news a { display: flex; flex-direction: column; height: 100%; padding: 18px 20px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); color: var(--ink); text-decoration: none; }
+.news a:hover { border-color: var(--link); }
+@media (min-width: 560px) { .news { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 820px) { .news { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.news-date { font: 600 0.8rem/1.3 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--link); }
+.news-title { margin-top: 6px; font-size: 1.12rem; font-weight: 600; line-height: 1.3; }
+.news-text { margin-top: 6px; color: var(--muted); font-size: 0.97rem; }
+.news .archive a { background: transparent; border-style: dashed; justify-content: center; }
+.news .archive .news-title { margin-top: 0; }
+.news .archive .news-title::after { content: " →"; }
+
+/* Archiv */
+.archive-year h2 { margin: 32px 0 4px; font-size: 1.5rem; }
+.archive-year h3 { margin: 18px 0 6px; font: 600 0.85rem/1.3 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.archive-list { margin: 0; padding: 0; list-style: none; }
+.archive-list li { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.archive-list a { font-size: 1.1rem; font-weight: 600; }
+.archive-list span { display: block; margin-top: 2px; color: var(--muted); }
