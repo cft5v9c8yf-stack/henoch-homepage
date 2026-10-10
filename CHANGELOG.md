@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.2.3 – 10. Oktober 2026
+
+- Advent-Beitrag: Satz über die lutherischen Väter vereinfacht.
+
 ## 1.2.2 – 10. Oktober 2026
 
 - Advent-Beitrag: Ausdruck und Satzbau überarbeitet. Bibelworte, Zitate und das Grußwort bleiben unverändert.
