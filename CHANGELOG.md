@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.2.2 – 10. Oktober 2026
+
+- Advent-Beitrag: Ausdruck und Satzbau überarbeitet. Bibelworte, Zitate und das Grußwort bleiben unverändert.
+
 ## 1.2.1 – 10. Oktober 2026
 
 - Advent-Beitrag: Knopf „Wüstenzeit in Henoch einrichten“ entfernt. Er öffnete die App immer auf „Heute“, nicht bei der Wüstenzeit.
