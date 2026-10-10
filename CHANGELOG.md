@@ -1,5 +1,12 @@
 # Changelog Homepage henoch.app
 
+## 1.2.0 – 10. Oktober 2026
+
+- Neu: Abschnitt „Neuigkeiten“ auf der Startseite, mit höchstens fünf Beiträgen und dem Archiv nach Jahr und Monat unter henoch.app/neuigkeiten/.
+- Erster Beitrag: „Wüstenwanderung im Advent“.
+- Unter „So installierst du Henoch“ steht kein eigener Link zur Anleitung mehr; sie ist über die Neuigkeiten und den Fuß jeder Seite erreichbar.
+- Im Fuß jeder Seite: Link „Neuigkeiten“.
+
 ## 1.1.1 – 9. Oktober 2026
 
 - Kachel „Gebetskammer“ statt „Tagebuch“, wie in Henoch 1.0. Die Kachel „Arena“ nennt Eisenschmiede und Wüstenzeit.
