@@ -251,8 +251,6 @@ h2 {
   .install { grid-template-columns: repeat(2, 1fr); }
 }
 
-.more { margin: 18px 0 0; font-family: var(--sans); font-weight: 600; }
-
 /* Bildschirmfotos: am Handy seitlich wischbar */
 .shots {
   display: grid;
@@ -312,3 +310,76 @@ footer a { color: inherit; }
   section { padding: 32px 0; }
   .areas div { grid-template-columns: 1fr; }
 }
+
+/* Neuigkeiten: Kacheln, Archiv und Beitragsseiten (Lesespalte wie die Anleitung) */
+.wrap-text { max-width: 720px; }
+.crumb { font-family: var(--sans); color: var(--muted); }
+.crumb a { color: var(--muted); font-weight: 400; }
+.kicker { display: block; margin: 0 0 6px; font: 600 0.8rem/1.3 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--link); }
+.entries { display: grid; gap: 14px; margin: 24px 0 0; padding: 0; list-style: none; }
+.entries a { display: block; padding: 18px 20px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); color: var(--ink); text-decoration: none; }
+.entries a:hover { border-color: var(--link); }
+.entry-title { display: block; font-size: 1.2rem; font-weight: 600; line-height: 1.3; }
+.entry-text { display: block; margin-top: 4px; color: var(--muted); }
+
+.text h1 { font-size: clamp(1.9rem, 6vw, 2.5rem); line-height: 1.15; margin: 0; }
+.text .subtitle { margin: 6px 0 0; font-size: 1.2rem; font-style: italic; color: var(--muted); }
+.text .intro { margin-top: 16px; font-size: 1.1rem; }
+.text h2 { margin: 40px 0 8px; font-size: 1.35rem; }
+.text h3 { margin: 24px 0 6px; font-size: 1.08rem; font-weight: 600; }
+.text p { margin: 0 0 12px; }
+.text .word { margin: 22px 0; padding: 16px 20px; background: var(--gold-soft); border-radius: var(--radius); }
+.text .word p { margin: 0; font-style: italic; font-size: 1.08rem; }
+.text .word cite, .text .quote cite { display: block; margin-top: 8px; font: 600 0.9rem/1.3 var(--sans); font-style: normal; color: var(--link); }
+.text .quote { margin: 16px 0; padding-left: 16px; border-left: 3px solid var(--rule); }
+.text .quote p { margin: 0; }
+.text .quote cite { font-weight: 400; color: var(--muted); }
+.text .table-wrap { overflow-x: auto; margin: 12px 0 16px; }
+.text table { width: 100%; min-width: 460px; border-collapse: collapse; font: 400 0.95rem/1.45 var(--sans); }
+.text th, .text td { text-align: left; vertical-align: top; padding: 9px 10px 9px 0; border-bottom: 1px solid var(--rule); }
+.text th { font-size: 0.8rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.text td:first-child { font-weight: 600; white-space: nowrap; }
+.text td.date { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.text .ways { display: grid; gap: 12px; margin: 12px 0; }
+@media (min-width: 560px) { .text .ways { grid-template-columns: 1fr 1fr; } }
+.text .way-card { padding: 14px 16px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); min-width: 0; }
+.text .way-card h3 { margin: 0; }
+.text .way-card .span { margin: 4px 0 8px; font: 600 0.9rem/1.3 var(--sans); color: var(--link); }
+.text .way-card p { margin: 0; }
+.text ol.steps, .text ul.packs { margin: 8px 0 16px; padding-left: 1.3em; }
+.text ol.steps li, .text ul.packs li { margin-top: 6px; }
+.text .path { font-family: var(--sans); font-weight: 600; }
+.text .father { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+.text .father:last-child { border-bottom: 0; }
+.text .father h3 { margin: 0; }
+.text .father .years { margin: 0 0 6px; font: 400 0.9rem/1.3 var(--sans); color: var(--muted); }
+.text .greeting { margin: 22px 0; padding: 4px 0 4px 18px; border-left: 3px solid var(--rubric); }
+.text .greeting p { margin: 0 0 10px; font-size: 1.08rem; }
+.text .greeting .closing { margin: 0; font-weight: 600; }
+.text .placeholder { margin: 20px 0; padding: 12px 16px; border: 1.5px dashed var(--rubric); border-radius: var(--radius); font-family: var(--sans); color: var(--rubric); }
+.text .dates { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; margin: 12px 0; font-family: var(--sans); }
+.text .dates dt { font-weight: 600; font-variant-numeric: tabular-nums; }
+.text .dates dd { margin: 0; }
+.text .cta { margin: 32px 0 20px; text-align: center; }
+.text .sources { font: 400 0.85rem/1.5 var(--sans); color: var(--muted); }
+
+/* Neuigkeiten auf der Startseite: höchstens fünf Beiträge und das Archiv */
+.news { display: grid; grid-template-columns: 1fr; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.news a { display: flex; flex-direction: column; height: 100%; padding: 18px 20px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); color: var(--ink); text-decoration: none; }
+.news a:hover { border-color: var(--link); }
+@media (min-width: 560px) { .news { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 820px) { .news { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.news-date { font: 600 0.8rem/1.3 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--link); }
+.news-title { margin-top: 6px; font-size: 1.12rem; font-weight: 600; line-height: 1.3; }
+.news-text { margin-top: 6px; color: var(--muted); font-size: 0.97rem; }
+.news .archive a { background: transparent; border-style: dashed; justify-content: center; }
+.news .archive .news-title { margin-top: 0; }
+.news .archive .news-title::after { content: " →"; }
+
+/* Archiv */
+.archive-year h2 { margin: 32px 0 4px; font-size: 1.5rem; }
+.archive-year h3 { margin: 18px 0 6px; font: 600 0.85rem/1.3 var(--sans); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.archive-list { margin: 0; padding: 0; list-style: none; }
+.archive-list li { padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.archive-list a { font-size: 1.1rem; font-weight: 600; }
+.archive-list span { display: block; margin-top: 2px; color: var(--muted); }
