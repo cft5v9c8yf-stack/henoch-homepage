@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.2.1 – 10. Oktober 2026
+
+- Advent-Beitrag: Knopf „Wüstenzeit in Henoch einrichten“ entfernt. Er öffnete die App immer auf „Heute“, nicht bei der Wüstenzeit.
+
 ## 1.2.0 – 10. Oktober 2026
 
 - Neu: Abschnitt „Neuigkeiten“ auf der Startseite, mit höchstens fünf Beiträgen und dem Archiv nach Jahr und Monat unter henoch.app/neuigkeiten/.
