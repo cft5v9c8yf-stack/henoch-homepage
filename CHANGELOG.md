@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.2.6 – 16. Oktober 2026
+
+- Anleitung: Kopfzeile „Anleitung · Henoch“ ohne Versionsnummer.
+
 ## 1.2.5 – 16. Oktober 2026
 
 - Impressum, Datenschutz und 404-Seite: Zurück-Pfeil „← Henoch“ oben links.
