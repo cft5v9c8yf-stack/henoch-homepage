@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.2.5 – 16. Oktober 2026
+
+- Impressum, Datenschutz und 404-Seite: Zurück-Pfeil „← Henoch“ oben links.
+
 ## 1.2.4 – 16. Oktober 2026
 
 - Neuigkeiten und Advent-Beitrag: Zurück-Pfeil „← Henoch“ oben links, wie in der Anleitung.
