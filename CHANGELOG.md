@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.2.7 – 16. Oktober 2026
+
+- Kopf und Fuß auf allen Unterseiten gleich: oben „← Henoch“, unten Anleitung, Neuigkeiten, Impressum, Datenschutz und Kontakt. Die Anleitung hat dafür denselben Fuß wie die übrigen Seiten bekommen, die Neuigkeiten zeigen oben nur noch „← Henoch“.
+
 ## 1.2.6 – 16. Oktober 2026
 
 - Anleitung: Kopfzeile „Anleitung · Henoch“ ohne Versionsnummer.

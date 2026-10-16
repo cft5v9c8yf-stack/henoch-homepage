@@ -63,7 +63,7 @@ body {
   font: 400 1.0625rem/1.6 var(--sans);
   -webkit-text-size-adjust: 100%;
 }
-.page { max-width: 64rem; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; }
+.page { max-width: 64rem; margin: 0 auto; padding-inline: 20px; padding-block: 24px 72px; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.2; text-wrap: balance; margin: 0; }
 h1 { font-size: clamp(2.1rem, 6vw, 3.1rem); letter-spacing: -0.01em; }
 h2 { font-size: clamp(1.55rem, 4vw, 2rem); }
@@ -144,17 +144,27 @@ details.faq summary::before { content: '+'; color: var(--gold); font-family: var
 details.faq[open] summary::before { content: '–'; }
 details.faq p { margin-top: 8px; padding-left: calc(1ch + 10px); }
 
-.back { display: inline-block; margin-bottom: 28px; font-weight: 600; color: var(--ink); text-decoration: none; }
-.foot-links { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 0; padding: 0; list-style: none; }
-.foot-links a { color: inherit; }
-.foot { padding-top: 32px; color: var(--muted); font-size: 0.92rem; display: grid; gap: 6px; }
+/* Head and foot as on the other pages of henoch.app (style.css) */
+.page-head { padding: calc(28px + env(safe-area-inset-top)) 0 8px; }
+.page-head-in { max-width: 64rem; margin: 0 auto; padding-inline: 20px; }
+.page-head a { font: 600 17px/1.55 var(--sans); color: var(--ink); text-decoration: none; }
+@media (max-width: 480px) { .page-head a { font-size: 16.5px; } }
+footer { padding: 28px 0 calc(36px + env(safe-area-inset-bottom)); border-top: 1px solid var(--rule); font-family: var(--sans); font-size: 0.95rem; color: var(--muted); }
+footer .wrap { max-width: 640px; margin: 0 auto; padding: 0 max(18px, env(safe-area-inset-right)) 0 max(18px, env(safe-area-inset-left)); }
+footer ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; margin: 0; padding: 0; list-style: none; }
+footer li { max-width: none; }
+footer a { color: inherit; }
+.hint { margin: 40px 0 0; color: var(--muted); font-size: 0.92rem; }
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 </style>
 </head>
 <body>
 
+<header class="page-head">
+  <div class="page-head-in"><a href="../">← Henoch</a></div>
+</header>
+
 <main class="page">
-  <a class="back" href="../">← Henoch</a>
   <header class="head">
     <p class="eyebrow">Anleitung · Henoch</p>
     <h1>Henoch Schritt für Schritt</h1>
@@ -516,17 +526,20 @@ details.faq p { margin-top: 8px; padding-left: calc(1ch + 10px); }
     </div>
   </section>
 
-  <footer class="foot">
-    <ul class="foot-links">
-      <li><a href="../">Startseite</a></li>
+  <p class="hint">Die Bilder zeigen Beispieldaten; die Namen darin sind erfunden.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <ul>
+      <li><a href="./">Anleitung</a></li>
       <li><a href="../neuigkeiten/">Neuigkeiten</a></li>
       <li><a href="../impressum.html">Impressum</a></li>
       <li><a href="../datenschutz.html">Datenschutz</a></li>
       <li>Kontakt: <a data-kontakt>kontakt (at) henoch.app</a></li>
     </ul>
-    <p>Die Bilder zeigen Beispieldaten; die Namen darin sind erfunden.</p>
-  </footer>
-</main>
+  </div>
+</footer>
 <script src="../kontakt.js" defer></script>
 </body>
 </html>
