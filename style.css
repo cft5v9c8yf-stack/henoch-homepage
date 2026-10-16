@@ -313,8 +313,6 @@ footer a { color: inherit; }
 
 /* Neuigkeiten: Kacheln, Archiv und Beitragsseiten (Lesespalte wie die Anleitung) */
 .wrap-text { max-width: 720px; }
-.crumb { font-family: var(--sans); color: var(--muted); }
-.crumb a { color: var(--muted); font-weight: 400; }
 .kicker { display: block; margin: 0 0 6px; font: 600 0.8rem/1.3 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--link); }
 .entries { display: grid; gap: 14px; margin: 24px 0 0; padding: 0; list-style: none; }
 .entries a { display: block; padding: 18px 20px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); color: var(--ink); text-decoration: none; }
