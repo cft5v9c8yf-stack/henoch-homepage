@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.2.4 – 16. Oktober 2026
+
+- Neuigkeiten und Advent-Beitrag: Zurück-Pfeil „← Henoch“ oben links, wie in der Anleitung.
+
 ## 1.2.3 – 10. Oktober 2026
 
 - Advent-Beitrag: Satz über die lutherischen Väter vereinfacht.
