@@ -80,7 +80,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--serif);
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 1.55;
 }
 
@@ -314,7 +314,7 @@ footer a { display: inline-block; padding: 10px 4px; color: inherit; }
 .page .stand { margin-top: 32px; font-family: var(--sans); font-size: 0.9rem; color: var(--muted); }
 
 @media (max-width: 480px) {
-  body { font-size: 16.5px; }
+  body { font-size: 1.03rem; }
   section { padding: 32px 0; }
   .areas div { grid-template-columns: 1fr; }
 }
