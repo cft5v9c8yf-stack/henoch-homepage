@@ -254,6 +254,7 @@ h2 {
 @media (min-width: 720px) {
   .install { grid-template-columns: repeat(2, 1fr); }
 }
+.cta { margin: 24px 0 0; }
 
 /* Bildschirmfotos: am Handy seitlich wischbar */
 .shots {
