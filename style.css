@@ -289,16 +289,19 @@ footer ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px 22px;
+  gap: 0 18px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-footer a { color: inherit; }
+footer a { display: inline-block; padding: 10px 4px; color: inherit; }
 
 /* Unterseiten */
 .page-head { padding: calc(28px + env(safe-area-inset-top)) 0 8px; }
 .page-head a {
+  display: inline-block;
+  padding: 10px 12px;
+  margin: -10px -12px;
   font-family: var(--sans);
   font-weight: 600;
   color: var(--ink);
