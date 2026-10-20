@@ -54,6 +54,12 @@
   --rubric: #e07a6e; --gold: #e0b93a; --gold-soft: #2e2a1c; --accent: #d8d0c0; --warm-soft: #242832;
   color-scheme: dark;
 }
+@media (prefers-contrast: more) {
+  :root { --rule: #8a8478; --muted: #4a505b; }
+}
+@media (prefers-contrast: more) and (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --rule: #6b7a90; --muted: #c4cad3; }
+}
 
 * { box-sizing: border-box; }
 body {

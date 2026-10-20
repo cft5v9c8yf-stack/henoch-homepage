@@ -78,6 +78,15 @@
   }
 }
 
+@media (prefers-contrast: more) {
+  :root { --rule: #8a8478; --muted: #4a505b; }
+  /* html davor: steht vor den Regeln der Kacheln und muss sie trotzdem überstimmen */
+  html .tiles li, html .card, html .news a, html .entries a { border-width: 2px; }
+}
+@media (prefers-contrast: more) and (prefers-color-scheme: dark) {
+  :root { --rule: #6b7a90; --muted: #c4cad3; }
+}
+
 *, *::before, *::after { box-sizing: border-box; }
 
 html { -webkit-text-size-adjust: 100%; }
