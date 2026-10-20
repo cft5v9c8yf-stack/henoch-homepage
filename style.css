@@ -109,9 +109,9 @@ h2 {
 /* Horizont und Linien laufen über die ganze Breite; die Lagen entsprechen
    den y-Werten im SVG (455, 475, 507, 557, 636, 750 von 160 bis 860). */
 .horizon {
-  --h: min(78vw, 440px);
+  --h: min(56vw, 340px);
   height: var(--h);
-  margin-top: 24px;
+  margin-top: 16px;
   background:
     linear-gradient(var(--ink), var(--ink)) 0 calc(var(--h) * 295 / 700 - 1px) / 100% 2px,
     linear-gradient(var(--rule), var(--rule)) 0 calc(var(--h) * 315 / 700) / 100% 1.5px,
