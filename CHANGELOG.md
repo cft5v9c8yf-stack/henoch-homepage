@@ -1,5 +1,23 @@
 # Changelog Homepage henoch.app
 
+## 1.3.0 – 20. Oktober 2026
+
+Feinschliff.
+
+1. Knopf und Kacheln geben beim Antippen nach (leicht kleiner, Kacheln mit goldenem Rand); Hover nur bei Geräten mit Maus; ohne Bewegung, wenn das Gerät „Bewegung reduzieren“ verlangt.
+2. Zweiter Knopf „Henoch öffnen“ unter „So installierst du Henoch“. Die Adresse der App steht damit an zwei Stellen in index.html.
+3. Kopf kompakter: Am Handy (390 × 844) sitzt „Henoch öffnen“ jetzt bei 395 statt 488 px.
+4. Tap-Ziele: Links im Fuß und „← Henoch“ mindestens 44 px hoch, Einträge im Inhaltsverzeichnis der Anleitung mit mehr Abstand.
+5. Schriftgröße in rem statt px, damit sie der Einstellung des Browsers folgt.
+6. Echte Kursive der Literata auch auf der Startseite und den Neuigkeiten.
+7. Überschriften etwas enger gesetzt.
+8. Zeilenhöhen der Überschriften nach Größe gestuft.
+9. Abstände auf ein 4er-Raster (Variablen --s1 bis --s7); der Seitenrand bleibt wie in der App bei 18 px.
+10. Bildschirmfotos auf Startseite und in der Anleitung einheitlich mit 24 px Radius und Schatten.
+11. Bei „Kontrast erhöhen“ kräftigere Linien und Grautöne, Kacheln mit 2 px Rahmen.
+12. Ungenutzte Regeln entfernt.
+13. Schrift und Farben wie in der App: Fließtext der Anleitung in Literata, Grau und Linkfarbe der Anleitung wie in der App, Symbolgold der Startseite wie in der App.
+
 ## 1.2.7 – 16. Oktober 2026
 
 - Kopf und Fuß auf allen Unterseiten gleich: oben „← Henoch“, unten Anleitung, Neuigkeiten, Impressum, Datenschutz und Kontakt. Die Anleitung hat dafür denselben Fuß wie die übrigen Seiten bekommen, die Neuigkeiten zeigen oben nur noch „← Henoch“.
