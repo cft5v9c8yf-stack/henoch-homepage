@@ -107,6 +107,7 @@ h2 {
   margin: 0 0 18px;
   font-size: 1.3rem;
   font-weight: 600;
+  line-height: 1.25;
   letter-spacing: -0.005em;
   color: var(--rubric);
 }
@@ -316,8 +317,8 @@ footer a { display: inline-block; padding: 10px 4px; color: inherit; }
   text-decoration: none;
 }
 .page { padding: 24px 0 48px; }
-.page h1 { margin: 0 0 18px; font-size: 1.8rem; font-weight: 600; letter-spacing: -0.01em; }
-.page h2 { margin: 32px 0 8px; font-size: 1.15rem; }
+.page h1 { margin: 0 0 18px; font-size: 1.8rem; font-weight: 600; line-height: 1.2; letter-spacing: -0.01em; }
+.page h2 { margin: 32px 0 8px; font-size: 1.15rem; line-height: 1.3; }
 .page p { margin: 0 0 12px; }
 .page .stand { margin-top: 32px; font-family: var(--sans); font-size: 0.9rem; color: var(--muted); }
 
@@ -341,8 +342,8 @@ footer a { display: inline-block; padding: 10px 4px; color: inherit; }
 .text h1 { font-size: clamp(1.9rem, 6vw, 2.5rem); line-height: 1.15; letter-spacing: -0.015em; margin: 0; }
 .text .subtitle { margin: 6px 0 0; font-size: 1.2rem; font-style: italic; color: var(--muted); }
 .text .intro { margin-top: 16px; font-size: 1.1rem; }
-.text h2 { margin: 40px 0 8px; font-size: 1.35rem; letter-spacing: -0.005em; }
-.text h3 { margin: 24px 0 6px; font-size: 1.08rem; font-weight: 600; }
+.text h2 { margin: 40px 0 8px; font-size: 1.35rem; line-height: 1.25; letter-spacing: -0.005em; }
+.text h3 { margin: 24px 0 6px; font-size: 1.08rem; font-weight: 600; line-height: 1.3; }
 .text p { margin: 0 0 12px; }
 .text .word { margin: 22px 0; padding: 16px 20px; background: var(--gold-soft); border-radius: var(--radius); }
 .text .word p { margin: 0; font-style: italic; font-size: 1.08rem; }
