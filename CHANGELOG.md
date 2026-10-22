@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.4.1 – 22. Oktober 2026
+
+- Beitrag „Ankommen, bleiben, lesen“: Kopf wie das Vorschaubild, Titel links und drei gleich große Bildschirmfotos rechts; am Handy stehen sie unter dem Titel.
+
 ## 1.4.0 – 22. Oktober 2026
 
 - Neuer Beitrag: „Ankommen, bleiben, lesen“ über drei Neuerungen in Henoch (Einrichtung, Wüstenwanderung, Lesepläne), mit Bildschirmfotos aus der Vorschau der App und eigenem Vorschaubild zum Teilen. Auf der Startseite und im Archiv eingetragen.
