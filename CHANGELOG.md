@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.4.2 – 22. Oktober 2026
+
+- Kacheln auf der Startseite aktualisiert: Bibellese nennt die Lesepläne, Arena nennt Gebetskammer, Eisenschmiede und Wüstenwanderung, Katechismus nennt die Erklärungen.
+
 ## 1.4.1 – 22. Oktober 2026
 
 - Advent-Beitrag: Das Grußwort beginnt mit „Bruder“ und spricht den Leser durchgehend mit „du“ an. Fürwörter für Gott und Christus im eigenen Text groß („Er“, „Seinem Wort“); Zitate bleiben wie in der Quelle.
