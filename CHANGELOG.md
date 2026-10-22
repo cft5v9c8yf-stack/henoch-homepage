@@ -2,7 +2,7 @@
 
 ## 1.4.1 – 22. Oktober 2026
 
-- Beitrag „Ankommen, bleiben, lesen“: Kopf wie das Vorschaubild, Titel links und drei gleich große Bildschirmfotos rechts; am Handy stehen sie unter dem Titel.
+- Beitrag „Ankommen, bleiben, lesen“: Kopf über die volle Breite, Titel links und die Begrüßung „Bruder, kennst du das?“ rechts; am Handy steht sie unter dem Titel.
 
 ## 1.4.0 – 22. Oktober 2026
 

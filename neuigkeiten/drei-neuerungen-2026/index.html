@@ -29,22 +29,15 @@
       border: 1px solid var(--rule); border-radius: 24px; background: var(--sheet);
       box-shadow: 0 1px 2px rgb(0 0 0 / .05), 0 12px 28px -18px rgb(29 35 48 / .35);
     }
-    /* Kopf wie das Vorschaubild: Titel links, drei Bildschirme rechts; schmal untereinander */
+    /* Kopf: Titel links, Begrüßung rechts; schmal untereinander */
     .article-hero-wrap { max-width: 1120px; }
     .text .article-hero { display: grid; gap: var(--s6); align-items: center; padding: var(--s4) 0 var(--s2); }
     .text .article-hero h1 { font-size: clamp(2.3rem, 7vw, 3.6rem); line-height: 1.08; letter-spacing: -0.02em; text-wrap: balance; }
     .text .article-hero .subtitle { font-size: clamp(1.2rem, 2.6vw, 1.55rem); }
-    .article-hero-shots { display: flex; justify-content: center; align-items: flex-start; gap: 4%; padding-top: 28px; }
-    .article-hero-shots img {
-      display: block; flex: 0 0 30%; width: 30%; max-width: 200px; height: auto; aspect-ratio: 780 / 1688;
-      border: 1px solid var(--rule); border-radius: 22px; background: var(--sheet);
-      box-shadow: 0 1px 2px rgb(0 0 0 / .05), 0 14px 30px -16px rgb(29 35 48 / .4);
-    }
-    .article-hero-shots img:nth-child(2) { margin-top: -28px; }
+    .text .article-hero .greeting { margin: 0; }
     @media (min-width: 860px) {
-      .text .article-hero { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: var(--s5); }
+      .text .article-hero { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s7); }
     }
-    @media (max-width: 480px) { .article-hero-shots img { border-radius: 14px; } }
     .text .shot figcaption { font-family: var(--sans); font-size: 0.88rem; line-height: 1.4; color: var(--muted); text-align: center; max-width: 270px; }
   </style>
 </head>
@@ -62,21 +55,14 @@
         <h1>Ankommen, bleiben, lesen</h1>
         <p class="subtitle">Drei Neuerungen in Henoch</p>
       </div>
-      <div class="article-hero-shots" aria-hidden="true">
-        <img src="img/einrichtung-weg.jpg" width="780" height="1688" alt="">
-        <img src="img/wueste-ueberblick.jpg" width="780" height="1688" alt="">
-        <img src="img/lesen-heute.jpg" width="780" height="1688" alt="">
+      <div class="greeting">
+        <p>Bruder, kennst du das? Du öffnest Henoch und weißt nicht, wo du anfangen sollst. Du nimmst dir eine Zeit der Stille und Ausrichtung vor und weißt nach drei Wochen nicht mehr, wo du stehst – oder du sitzt morgens vor der geöffneten Bibel und fragst dich, was du heute lesen sollst.</p>
+        <p>Hier haben wir in den letzten Wochen angesetzt und die App ruhiger und den Weg klarer gestaltet.</p>
       </div>
     </header>
   </div>
 
   <div class="wrap wrap-text">
-
-    <div class="greeting">
-      <p>Bruder, kennst du das? Du öffnest Henoch und weißt nicht, wo du anfangen sollst. Du nimmst dir eine Zeit der Stille und Ausrichtung vor und weißt nach drei Wochen nicht mehr, wo du stehst – oder du sitzt morgens vor der geöffneten Bibel und fragst dich, was du heute lesen sollst.</p>
-      <p>Hier haben wir in den letzten Wochen angesetzt und die App ruhiger und den Weg klarer gestaltet.</p>
-    </div>
-
     <h2>1. Die Einrichtung: der erste Start</h2>
     <p>Beim ersten Öffnen führt dich Henoch in wenigen Schritten zur ersten Stillen Zeit. Zuerst siehst du, wie der Tag beginnt: <strong>zuerst das Wort, dann das Gebet, zuletzt die Ausrichtung</strong>. Du liest, bevor du planst. Danach stellst du ein, was für dein Haus gilt: deine Zeiten, deine Gewohnheiten, deinen Leseplan.</p>
     <p>Du wählst deinen Weg. Der <strong>Alltag</strong> ist für den gewöhnlichen Tag mit Stiller Zeit, Bibellese, Vesper und Nachtgebet. Die <strong>Wüstenwanderung</strong> ist für eine begrenzte Zeit mit weniger Ablenkung und mehr Raum für Gott. Wer sie wählt, legt gleich Dauer und Beginn fest und wählt seine Gewohnheiten.</p>
