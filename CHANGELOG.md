@@ -3,6 +3,8 @@
 ## 1.4.2 – 22. Oktober 2026
 
 - Kacheln auf der Startseite aktualisiert: Bibellese nennt die Lesepläne, Arena nennt Gebetskammer, Eisenschmiede und Wüstenwanderung, Katechismus nennt die Erklärungen.
+- Anleitung: Einrichtung beim ersten Start (Alltag oder Wüstenwanderung), neue Lesepläne, Leseplan und Tagebuch der Wüstenzeit, Erklärungen im Katechismus ergänzt.
+- Versionsstempel in `index.html` und `README.md` sowie `lastmod` in der Sitemap nachgezogen.
 
 ## 1.4.1 – 22. Oktober 2026
 
