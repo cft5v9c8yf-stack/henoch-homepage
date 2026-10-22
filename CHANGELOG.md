@@ -1,5 +1,10 @@
 # Changelog Homepage henoch.app
 
+## 1.4.1 – 22. Oktober 2026
+
+- Advent-Beitrag: Das Grußwort beginnt mit „Bruder“ und spricht den Leser durchgehend mit „du“ an. Fürwörter für Gott und Christus im eigenen Text groß („Er“, „Seinem Wort“); Zitate bleiben wie in der Quelle.
+- README: Regel für Beiträge (Anrede „Bruder“ und „du“, Fürwörter für Gott groß).
+
 ## 1.4.0 – 22. Oktober 2026
 
 - Neuer Beitrag: „Ankommen, bleiben, lesen“ über drei Neuerungen in Henoch (Einrichtung, Wüstenwanderung, Lesepläne), mit Bildschirmfotos aus der Vorschau der App und eigenem Vorschaubild zum Teilen. Auf der Startseite und im Archiv eingetragen.
