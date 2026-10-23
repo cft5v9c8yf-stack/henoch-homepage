@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.5.0 – 23. Oktober 2026
+
+- Beitrag „Ankommen, bleiben, lesen“: vierter Abschnitt zum Treffen am Abendbrunnen, mit dem Export der Einträge, drei Bildschirmfotos und dem Bibelwort Prediger 4,12. Untertitel „Vier Neuerungen in Henoch“, Vorschaubild, Meldung auf der Startseite und im Archiv angepasst.
+
 ## 1.4.1 – 22. Oktober 2026
 
 - Advent-Beitrag: Das Grußwort beginnt mit „Bruder“ und spricht den Leser durchgehend mit „du“ an. Fürwörter für Gott und Christus im eigenen Text groß („Er“, „Seinem Wort“); Zitate bleiben wie in der Quelle.
