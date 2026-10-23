@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.5.1 – 23. Oktober 2026
+
+- Beitrag „Ankommen, bleiben, lesen, zuhören“: Überschrift um „zuhören“ ergänzt, passend zum Treffen am Abendbrunnen. Vorschaubild zum Teilen mit vier Bildschirmen, darunter das Treffen. Titel auf der Startseite und im Archiv angepasst.
+
 ## 1.5.0 – 23. Oktober 2026
 
 - Beitrag „Ankommen, bleiben, lesen“: vierter Abschnitt zum Treffen am Abendbrunnen, mit dem Export der Einträge, drei Bildschirmfotos und dem Bibelwort Prediger 4,12. Untertitel „Vier Neuerungen in Henoch“, Vorschaubild, Meldung auf der Startseite und im Archiv angepasst.
