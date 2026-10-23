@@ -2,7 +2,7 @@
 
 ## 1.5.2 – 23. Oktober 2026
 
-- Beitrag „Ankommen, bleiben, lesen, zuhören“: Die Begrüßung nennt jetzt auch das Gespräch mit der Frau und den Abend zu zweit.
+- Beitrag „Ankommen, bleiben, lesen, zuhören“: Die Begrüßung nennt jetzt auch den Ehemann, der mit seiner Frau ins Gespräch kommen will, und den Abend zu zweit.
 
 ## 1.5.1 – 23. Oktober 2026
 
