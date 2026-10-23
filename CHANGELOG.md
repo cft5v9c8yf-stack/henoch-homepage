@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.5.2 – 23. Oktober 2026
+
+- Beitrag „Ankommen, bleiben, lesen, zuhören“: Die Begrüßung nennt jetzt auch das Gespräch mit der Frau und den Abend zu zweit.
+
 ## 1.5.1 – 23. Oktober 2026
 
 - Beitrag „Ankommen, bleiben, lesen, zuhören“: Überschrift um „zuhören“ ergänzt, passend zum Treffen am Abendbrunnen. Vorschaubild zum Teilen mit vier Bildschirmen, darunter das Treffen. Titel auf der Startseite und im Archiv angepasst.
