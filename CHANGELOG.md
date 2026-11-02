@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 1.6.0 – 2. November 2026
+
+- Neuer Beitrag: „Wachen, halten, zu zweit“ über drei Neuerungen in Henoch (Reflexion in der Gebetskammer, Gewohnheiten nach Tagen, Weg zum Treffen am Abendbrunnen). Auf der Startseite, im Archiv und in der Sitemap eingetragen.
+
 ## 1.5.2 – 23. Oktober 2026
 
 - Beitrag „Ankommen, bleiben, lesen, zuhören“: Die Begrüßung nennt jetzt auch den Ehemann, der mit seiner Frau ins Gespräch kommen will, und den Abend zu zweit.
