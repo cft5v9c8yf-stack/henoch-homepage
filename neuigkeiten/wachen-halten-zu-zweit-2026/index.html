@@ -20,6 +20,17 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="../../style.css">
+  <style>
+    /* Bildschirmfotos aus der App, im Rahmen wie in der Anleitung */
+    .text .shots2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: var(--s4); margin: var(--s5) 0; }
+    .text .shot { margin: 0; display: grid; gap: var(--s2); justify-items: center; align-content: start; }
+    .text .shot img {
+      display: block; width: 100%; max-width: 270px; height: auto; aspect-ratio: 780 / 1688;
+      border: 1px solid var(--rule); border-radius: 24px; background: var(--sheet);
+      box-shadow: 0 1px 2px rgb(0 0 0 / .05), 0 12px 28px -18px rgb(29 35 48 / .35);
+    }
+    .text .shot figcaption { font-family: var(--sans); font-size: 0.88rem; line-height: 1.4; color: var(--muted); text-align: center; max-width: 270px; }
+  </style>
 </head>
 <body>
 
@@ -54,7 +65,18 @@
       <li><strong>Bestandsaufnahme:</strong> Wie laufen die Lesungen, die Psalmen, das Fasten? Diese Disziplinen sind keine Auszeichnungen, sondern Hilfsmittel, deine Aufmerksamkeit auf Christus zu richten. Wer vom Weg abgekommen ist, korrigiert den Kurs und macht weiter.</li>
       <li><strong>Wo hat der Feind an Boden gewonnen?</strong> Welche Sünde kehrt immer wieder? Du benennst die Sache, statt vage zu bleiben, und bringst sie im Gebet vor Gott.</li>
     </ul>
-    <p>Zu jeder Frage schreibst du mit der Tastatur oder mit dem Pencil. Der Eintrag wird beim Schreiben gesichert, wie jeder andere. Zuletzt legst du Gewohnheiten fest und übernimmst sie mit <span class="path">In die Gewohnheiten übernehmen</span> in deine Liste. Beim Exportieren als Text oder PDF steht die Reflexion unter „Was dich bewegt“, mit den Fragen und den Gewohnheiten als Zwischenüberschriften.</p>
+    <p>Zu jeder Frage schreibst du mit der Tastatur oder mit dem Pencil. Der Eintrag wird beim Schreiben gesichert, wie jeder andere. Zuletzt legst du Gewohnheiten fest und übernimmst sie mit <span class="path">Zur Liste hinzufügen</span> in deine Gewohnheiten. Beim Exportieren als Text oder PDF steht die Reflexion unter „Was dich bewegt“, mit den Fragen und den Gewohnheiten als Zwischenüberschriften.</p>
+
+    <div class="shots2">
+      <figure class="shot">
+        <img src="img/wachen-wahl.jpg" width="780" height="1688" loading="lazy" alt="Gebetskammer, neuer Eintrag: Matthäus 26,41, die Wahl Beten oder Wachen (Wachen gewählt), Psalm 139,23–24 und die Frage „Zum Ende der Woche“.">
+        <figcaption>Beten oder Wachen, dann die erste Frage</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/wachen-zuspruch.jpg" width="780" height="1688" loading="lazy" alt="Reflexion, unterer Teil: das Wort aus 1. Johannes 1,9 und der Abschnitt „Gewohnheiten festlegen“ mit Name, Rhythmus und „Zur Liste hinzufügen“.">
+        <figcaption>Am Ende der Zuspruch und die Gewohnheiten</figcaption>
+      </figure>
+    </div>
 
     <h3>Was dir das bringt</h3>
     <ul class="packs">
@@ -66,6 +88,21 @@
     <p>Eine Gewohnheit gehört nicht an jeden Tag. Darum wählst du bei jeder einzelnen unter <span class="path">Mehr → Gewohnheiten</span>, <strong>wann</strong> sie dran ist: jeden Tag, an bestimmten Tagen (du tippst die Tage an, etwa den Long Run am Samstag), einmal bis sechsmal in der Woche oder einmal im Monat.</p>
     <p>Die Liste selbst ist kurz geworden. Sie zeigt nur, was du hältst, mit dem Namen und darunter, wann es dran ist: bei täglichen Gewohnheiten als Woche in sieben Kreisen, sonst in Worten. Antippen öffnet, was du ändern kannst: wann sie dran ist, den Stern „Im Blick“, ausschalten und bei eigenen das Löschen. Zum Sortieren ziehst du am Griff. Alle Vorlagen und „Eigene anlegen“ findest du unter <span class="path">+ Gewohnheit hinzufügen</span>. Eine Zeile kannst du auch nach links wischen: Bei einer eigenen Gewohnheit erscheint „Löschen“, bei allen anderen „Ausschalten“.</p>
     <p>Unter <span class="path">Heute</span> stehen die Gewohnheiten jetzt in Gruppen: „Heute“ (oder der Tag, den du gewählt hast), „In dieser Woche“ und „In diesem Monat“. Was an bestimmten Tagen dran ist, steht nur an diesen Tagen da, mit dem Hinweis „am Samstag“. An den anderen Tagen ruht es.</p>
+
+    <div class="shots2">
+      <figure class="shot">
+        <img src="img/gewohnheiten-liste.jpg" width="780" height="1688" loading="lazy" alt="Mehr, Gewohnheiten: die kurze Liste „Meine Gewohnheiten“ mit Namen und darunter, wann sie dran sind, bei täglichen als sieben Kreise.">
+        <figcaption>Die kurze Liste: was du hältst, und wann es dran ist</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/gewohnheiten-tage.jpg" width="780" height="1688" loading="lazy" alt="Mehr, Gewohnheiten: Tischgebet mit der Familie, geöffnet mit „an bestimmten Tagen“ und den Tagen Mo, Mi und Fr.">
+        <figcaption>Antippen: wann die Gewohnheit dran ist</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="img/heute-gruppen.jpg" width="780" height="1688" loading="lazy" alt="Heute, Gewohnheiten: Wochentage oben, die Gruppen „Heute“ und „In dieser Woche“; das Tischgebet trägt den Hinweis Mo, Mi, Fr.">
+        <figcaption>Unter „Heute“: Gruppen nach Tag, Woche und Monat</figcaption>
+      </figure>
+    </div>
 
     <h3>Was dir das bringt</h3>
     <ul class="packs">
@@ -81,6 +118,13 @@
     <h2>3. Zu zweit: der kurze Weg zum Abendbrunnen</h2>
     <p>Im letzten Beitrag haben wir das <strong>Treffen am Abendbrunnen</strong> vorgestellt, den festen Abend zu zweit für Verheiratete. Wer ihn eingeschaltet hat, sieht ihn unter <span class="path">Heute</span> als Gewohnheit. Neu ist der Weg dorthin: Am Ende der Zeile führt ein <strong>goldener Pfeil in einem Ring</strong> direkt zum Treffen, wie der Ring zum Abhaken auf der anderen Seite. Die eigene Zeile „Zum Treffen am Abendbrunnen“ darunter entfällt.</p>
     <p>Auch das Haus ist ruhiger geworden. Unter <span class="path">Mein Haus</span> gibt es den Knopf „Erhört“ nicht mehr; bei deiner Frau und jedem Kind steht nur das Anliegen. Was du früher als erhört festgehalten hast, bleibt im Rückblick unter „Gebetserhörungen“.</p>
+
+    <div class="shots2">
+      <figure class="shot">
+        <img src="img/heute-abendbrunnen.jpg" width="780" height="1688" loading="lazy" alt="Heute, Gewohnheiten: bei „Treffen am Abendbrunnen“ steht am Zeilenende ein goldener Pfeil in einem Ring.">
+        <figcaption>Der Pfeil führt zum Treffen</figcaption>
+      </figure>
+    </div>
 
     <h3>Was dir das bringt</h3>
     <ul class="packs">
@@ -100,7 +144,7 @@
 
     <p>Das Wachen findest du in der <span class="path">Arena</span> unter Gebetskammer, die Gewohnheiten unter <span class="path">Mehr</span>, den Abendbrunnen unter <span class="path">Heute</span>. Wie du Henoch auf dem Handy installierst, steht auf der <a href="../../">Startseite</a>; den ganzen Weg durch den Tag zeigt die <a href="../../anleitung/">Anleitung</a>. Den vorigen Beitrag mit dem Treffen am Abendbrunnen findest du <a href="../drei-neuerungen-2026/">hier</a>.</p>
 
-    <p class="sources">Bibeltexte nach der Lutherbibel 1912, Wort für Wort geprüft. Stand: Henoch, Version 1.37.</p>
+    <p class="sources">Bibeltexte nach der Lutherbibel 1912, Wort für Wort geprüft. Bilder aus der Vorschau von Henoch mit Beispieldaten. Stand: Henoch, Version 1.37.</p>
   </div>
 </main>
 

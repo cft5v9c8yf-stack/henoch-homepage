@@ -2,7 +2,7 @@
 
 ## 1.6.0 – 2. November 2026
 
-- Neuer Beitrag: „Wachen, halten, zu zweit“ über drei Neuerungen in Henoch (Reflexion in der Gebetskammer, Gewohnheiten nach Tagen, Weg zum Treffen am Abendbrunnen). Auf der Startseite, im Archiv und in der Sitemap eingetragen.
+- Neuer Beitrag: „Wachen, halten, zu zweit“ über drei Neuerungen in Henoch (Reflexion in der Gebetskammer, Gewohnheiten nach Tagen, Weg zum Treffen am Abendbrunnen). Mit sechs Bildschirmfotos aus der Vorschau der App. Auf der Startseite, im Archiv und in der Sitemap eingetragen.
 
 ## 1.5.2 – 23. Oktober 2026
 
