@@ -5,7 +5,7 @@
 Neue Gestaltung der Startseite, Richtung „Tagesbogen“.
 
 - Kopf: Verlauf vom Morgengold zum Abendblau, großer Titel „Mit Gott durch den Tag.“, die App in heller und dunkler Ansicht als Hauptbild. Am Handy untereinander.
-- Aufbau: eine schmale Spalte und drei Blöcke statt sechs. „Was Henoch ist“ enthält die Funktionsliste und die Grundsätze; „So sieht Henoch aus“ enthält die zwei Bildschirme und die Installation; dann die Neuigkeiten als Zeilenliste.
+- Aufbau: eine schmale Spalte, der Tag läuft über die ganze Seite. Morgen: „Was Henoch ist“ mit Funktionsliste und Grundsätzen auf hellem Grund. Abend: Die Sonne sitzt auf der Kante, darunter „So sieht Henoch aus“ mit den zwei Bildschirmen, schräg wie im Kopf. Nacht: Installation und Neuigkeiten auf dunklem Grund mit goldenem Knopf.
 - Eigene Datei `startseite.css`; aus `style.css` sind die nur für die Startseite benutzten Regeln entfernt. Unterseiten unverändert.
 - Texte, Adressen und Anzahl der App-Links (zwei) unverändert.
 
