@@ -1,6 +1,6 @@
 # Henoch – Homepage
 
-Version 1.5.2 · live unter **https://henoch.app**
+Version 1.5.2 (live) · Entwurf 2.0.0 auf Branch, noch nicht veröffentlicht · live unter **https://henoch.app**
 
 Die Homepage stellt Henoch vor, einen Begleiter für Männer, die ihren Tag mit Gott beginnen und beschließen wollen, und führt zur App unter **https://mein.henoch.app**.
 
@@ -13,6 +13,7 @@ Reines HTML und CSS, ohne Build-Schritt und ohne Abhängigkeiten. Veröffentlich
 | `index.html` | Startseite. Der Link zur App steht an zwei Stellen, beide als Knopf „Henoch öffnen“: im Kopf und unter „So installierst du Henoch“. Bei einer neuen Adresse beide ändern. |
 | `anleitung/` | Anleitung „Henoch Schritt für Schritt“ mit eigenen Bildschirmfotos in `anleitung/img/` |
 | `impressum.html`, `datenschutz.html`, `404.html` | Unterseiten |
+| `startseite.css` | Gestaltung der Startseite (Kopf mit Tagesbogen, Abschnitte); nur von `index.html` geladen |
 | `style.css` | Farben, Schriften und Layout wie in der App, hell und dunkel |
 | `kontakt.js` | setzt die Kontaktadresse erst im Browser zusammen |
 | `fonts/` | Literata und Source Sans 3 (SIL Open Font License) |
