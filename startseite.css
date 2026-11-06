@@ -9,8 +9,8 @@
   --on-night: #e8e3d8;
   --on-night-muted: #a9b1bf;
   --gold: #d9ae00;
-  --max: 1160px;
-  --pad: clamp(20px, 5vw, 56px);
+  --max: 1360px;
+  --pad: clamp(18px, 3.2vw, 44px);
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -108,26 +108,24 @@
   .phone-2 { left: 40%; top: 27%; }
 }
 
-/* ---------- Abschnitte: der Tag läuft weiter, vom Morgen zur Nacht ---------- */
-.n { max-width: 760px; }
-.start section { border-top: 0; padding: clamp(36px, 5.5vw, 60px) 0; }
+/* ---------- Abschnitte: volle Breite wie der Kopf, Inhalte nebeneinander ---------- */
+.start section { border-top: 0; padding: clamp(32px, 4.5vw, 52px) 0; }
 .start h2 {
   margin: 0 0 var(--s3);
-  font-size: clamp(1.6rem, 4.2vw, 2.1rem);
+  font-size: clamp(1.5rem, 3.6vw, 1.9rem);
   font-weight: 600;
   line-height: 1.12;
   letter-spacing: -0.025em;
   color: var(--ink);
 }
-.start h3.sub { margin: 36px 0 var(--s2); font-size: 1.2rem; font-weight: 600; line-height: 1.2; color: var(--rubric); }
-.start .lead { margin: 0 0 var(--s4); font-size: 1rem; line-height: 1.55; }
+.start .lead { margin: 0; font-size: 1rem; line-height: 1.55; }
 
 /* Morgen: Papier mit einem Rest des Morgenlichts links oben */
 .morgen {
-  padding-bottom: clamp(64px, 9vw, 96px);
+  padding-bottom: clamp(56px, 7vw, 76px);
   background: radial-gradient(ellipse 70% 60% at 0% 0%, var(--dawn) 0%, transparent 70%), var(--paper);
 }
-
+.was { display: grid; gap: 24px; }
 .tile-icon {
   display: grid;
   place-items: center;
@@ -138,23 +136,31 @@
   color: var(--icon-gold);
 }
 .tile-icon svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
-
-.features, .principles { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--rule); }
+.features, .principles { margin: 0; padding: 0; list-style: none; }
+.features { border-top: 1px solid var(--rule); }
 .features li { display: grid; grid-template-columns: 36px 1fr; gap: 2px 14px; padding: 11px 0; border-bottom: 1px solid var(--rule); }
 .features .tile-icon { grid-row: span 2; margin: 2px 0 0; }
 .features h3 { margin: 0; font-size: 1rem; font-weight: 600; line-height: 1.3; }
 .features p, .principles p { margin: 0; color: var(--muted); font-size: 0.92rem; line-height: 1.45; }
-.principles li { padding: 11px 0; border-bottom: 1px solid var(--rule); }
-.principles h4 { margin: 0 0 2px; font-size: 1rem; font-weight: 600; line-height: 1.3; }
+.grund { margin-top: 32px; padding-top: 20px; border-top: 2px solid var(--ink); }
+.grund h3 { margin: 0 0 12px; font: 600 0.82rem/1.3 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--rubric); }
+.principles { display: grid; gap: 14px 40px; }
+.principles h4 { margin: 0 0 2px; font-size: 1.05rem; font-weight: 600; line-height: 1.3; }
 
-/* Horizont: ab hier wird es Abend, die Sonne sitzt auf der Kante */
-.einblick, .nacht { color: var(--on-night); }
-.einblick {
-  position: relative;
-  padding-bottom: clamp(48px, 7vw, 80px);
-  background: linear-gradient(180deg, var(--dusk-1) 0%, var(--night) 100%);
+@media (min-width: 900px) {
+  .was { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; align-items: start; }
+  .features { display: grid; grid-template-columns: 1fr 1fr; column-gap: 36px; }
+  .principles { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
-.einblick::before {
+
+/* Abend und Nacht: ein dunkles Band, die Sonne sitzt auf der Kante */
+.nacht {
+  position: relative;
+  color: var(--on-night);
+  background: linear-gradient(180deg, var(--dusk-1) 0%, var(--night) 70%);
+  padding-top: clamp(40px, 5vw, 60px);
+}
+.nacht::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -165,51 +171,54 @@
   border-radius: 88px 88px 0 0;
   background: var(--gold);
 }
-.einblick h2, .nacht h2 { color: var(--on-night); }
+.nacht h2 { color: var(--on-night); }
+.abend { display: grid; gap: 40px; }
+.abend-text { display: grid; gap: 36px; align-content: start; }
 
 /* Telefone schräg, wie im Kopf */
-.shots-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin: var(--s5) 0 0; padding: 0; list-style: none; }
-.shots-2 li { display: grid; gap: 18px; align-content: start; justify-items: center; min-width: 0; }
+.shots-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: var(--s4) 0 0; padding: 0; list-style: none; }
+.shots-2 li { display: grid; gap: 14px; align-content: start; justify-items: center; min-width: 0; }
 .shots-2 li:first-child picture { transform: rotate(-3deg); }
-.shots-2 li:last-child picture { transform: rotate(3deg); margin-top: 28px; }
-.shots-2 li:last-child div { margin-top: 28px; }
-.shots-2 picture { display: block; width: min(100%, 250px); }
+.shots-2 li:last-child picture { transform: rotate(3deg); margin-top: 22px; }
+.shots-2 li:last-child div { margin-top: 22px; }
+.shots-2 picture { display: block; width: min(100%, 220px); }
 .shots-2 img {
   display: block;
   width: 100%;
   height: auto;
   aspect-ratio: 780 / 1540;
-  border-radius: 30px;
+  border-radius: 28px;
   border: 6px solid #1d2330;
   background: #1d2330;
-  box-shadow: 0 34px 60px -14px rgb(0 0 0 / .55);
+  box-shadow: 0 30px 56px -14px rgb(0 0 0 / .55);
 }
-.shots-2 div { width: min(100%, 250px); }
+.shots-2 div { width: min(100%, 220px); }
 .shots-2 h3 { margin: 0 0 2px; font-size: 1.05rem; font-weight: 600; color: var(--on-night); }
 .shots-2 p { margin: 0; color: var(--on-night-muted); font-size: 0.92rem; line-height: 1.45; }
 
-/* Nacht: Installation und Neuigkeiten */
-.nacht { background: var(--night); }
-.nacht + .nacht { border-top: 1px solid rgb(255 255 255 / .1); }
 .steps-2, .meldungen { margin: 0; padding: 0; list-style: none; border-top: 1px solid rgb(255 255 255 / .14); }
 .steps-2 li, .meldungen li { border-bottom: 1px solid rgb(255 255 255 / .14); }
-.steps-2 li { padding: 12px 0; }
+.steps-2 li { padding: 11px 0; }
 .steps-2 h4 { margin: 0 0 2px; font: 600 0.8rem/1.3 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
-.steps-2 p { margin: 0; font-size: 1rem; line-height: 1.5; color: var(--on-night); }
-.start .cta { margin: 24px 0 0; }
+.steps-2 p { margin: 0; font-size: 0.98rem; line-height: 1.5; color: var(--on-night); }
+.start .cta { margin: 18px 0 0; }
 .nacht .button { background: var(--gold); color: #131a26; }
 
-.meldungen a { display: grid; gap: 2px; padding: 13px 0; color: var(--on-night); text-decoration: none; }
+.meldungen a { display: grid; gap: 2px; padding: 11px 0; color: var(--on-night); text-decoration: none; }
 .meldungen .news-date { margin: 0; font: 600 0.75rem/1.4 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
-.meldungen .news-title { margin: 0; font-size: 1.05rem; font-weight: 600; line-height: 1.3; }
-.meldungen .news-text { margin: 0; color: var(--on-night-muted); font-size: 0.92rem; line-height: 1.45; }
+.meldungen .news-title { margin: 0; font-size: 1.02rem; font-weight: 600; line-height: 1.3; }
+.meldungen .news-text { margin: 0; color: var(--on-night-muted); font-size: 0.9rem; line-height: 1.4; }
 .meldungen a:active .news-title { color: var(--gold); }
 @media (hover: hover) { .meldungen a:hover .news-title { color: var(--gold); } }
 .meldungen .archive .news-title::after { content: " →"; }
+
+@media (min-width: 900px) {
+  .abend { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; }
+}
 
 .start footer { margin: 0; background: var(--night); border-top: 1px solid rgb(255 255 255 / .1); color: var(--on-night-muted); }
 .start footer a { color: var(--on-night); }
 
 @media (prefers-contrast: more) {
-  .nacht, .einblick, .start footer { background: #000; }
+  .nacht, .start footer { background: #000; }
 }
