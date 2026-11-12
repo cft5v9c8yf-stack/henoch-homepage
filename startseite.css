@@ -17,7 +17,6 @@
   padding: 0;
   border: 0;
   background: var(--paper);
-  border-bottom: 2px solid var(--ink);
 }
 .bar {
   display: flex;
@@ -98,8 +97,19 @@
 .start { background: var(--paper); }
 .hero > .w { position: relative; z-index: 1; }
 /* Sonne über dem Horizont mit den drei Bögen, wie Logo und Begrüßungsschirm der App */
+/* Übergänge wie die Leiste am unteren Rand der App: halb durchsichtig, der Inhalt läuft darunter weiter */
+.start { --leiste: 60px; }
+.hero::after, .zeit .karte::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; z-index: 2;
+  height: var(--leiste);
+  background: color-mix(in srgb, var(--sheet) 68%, transparent);
+  -webkit-backdrop-filter: blur(10px) saturate(1.3);
+  backdrop-filter: blur(10px) saturate(1.3);
+  border-top: 1px solid var(--rule);
+}
+.zeit .karte::after { height: 44px; }
 .sonne {
-  position: absolute; left: 50%; bottom: 0; width: 560px; height: 280px; margin-left: -280px;
+  position: absolute; left: 50%; bottom: var(--leiste); width: 560px; height: 280px; margin-left: -280px;
   background: radial-gradient(circle at 50% 100%, var(--sun) 0 88px, transparent 89px 150px, var(--rule) 151px 153px, transparent 154px 208px, var(--rule) 209px 211px, transparent 212px 268px, var(--rule) 269px 271px, transparent 272px);
 }
 @media (min-width: 900px) { .sonne { left: 47%; } }
@@ -119,7 +129,7 @@
 .punkt { flex: none; width: 13px; height: 13px; border: 1.5px solid var(--ink); border-radius: 50%; background: var(--paper); }
 .zeit-kopf h3 { margin: 0; font: 600 0.82rem/1.3 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
 .linie { flex: 1; height: 1.5px; background: var(--rule); }
-.zeit .karte { flex: 1; display: flex; flex-direction: column; }
+.zeit .karte { position: relative; flex: 1; display: flex; flex-direction: column; }
 
 .tile-icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--gold-soft); color: var(--icon-gold); }
 .tile-icon svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
@@ -129,7 +139,7 @@
 .features h4 { margin: 0; font-size: 1.08rem; font-weight: 600; line-height: 1.3; }
 .features p { margin: 0; color: var(--muted); font: 400 0.95rem/1.45 var(--sans); }
 
-.zeit-phone { margin: 28px auto 0; width: min(74%, 290px); height: 250px; overflow: hidden; padding: 7px 7px 0; border-radius: 36px 36px 0 0; background: #1d2330; }
+.zeit-phone { margin: 28px auto 0; width: min(74%, 290px); height: 270px; overflow: hidden; padding: 7px 7px 0; border-radius: 36px 36px 0 0; background: #1d2330; }
 .zeit-phone img { display: block; width: 100%; height: auto; border-radius: 29px 29px 0 0; }
 .zeit .karte .zeit-phone { margin-top: auto; }
 .zeit .features { margin-bottom: 28px; }
@@ -159,7 +169,7 @@
   .zeiten, .drei { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: clamp(20px, 2.4vw, 32px); }
   .zeit:not(:last-child) .linie { margin-right: calc(clamp(20px, 2.4vw, 32px) * -1 - 23px); }
   .zeit:last-child .linie { visibility: hidden; }
-  .zeit-phone { height: 320px; }
+  .zeit-phone { height: 340px; }
 }
 @media (max-width: 899px) {
   .linie { display: none; }
