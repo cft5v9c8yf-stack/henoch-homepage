@@ -1,5 +1,19 @@
 # Changelog Homepage henoch.app
 
+## 2.0.0 – 12. November 2026
+
+Neue Gestaltung der Startseite: alles auf einen Blick.
+
+- Oben links Titel „Mit Gott durch den Tag.“, der Knopf „Henoch öffnen“ und darunter die Installation für iPhone und Android. Der Knopf steht damit nur noch einmal auf der Seite.
+- Oben rechts die App mit dem Umschalter „Am Morgen / Über den Tag / Am Abend“, ohne JavaScript. Jede Stellung zeigt ein Bildschirmfoto und die zugehörigen Funktionen.
+- Bildschirmfotos passend zur Stellung und zum Farbmodus: Morgen „Heute“, Tag „Wort“, Abend „Arena“ in der dunklen Ansicht; Morgen und Tag wechseln im Dunkelmodus auf die dunklen Fotos.
+- Alle 31 Bildschirmfotos neu aus der Vorschau der App (Version 1.39.1), je hell und dunkel, mit der schwebenden Glas-Leiste. Startseite, Anleitung und der Beitrag „Ankommen, bleiben, lesen, zuhören“ zeigen im Dunkelmodus die dunklen Fotos.
+- Anleitung an die Fotos und den Stand der App angeglichen: Wege unter „Mehr“ (Tag und Woche, App und Daten statt Einstellungen, Zeiten, Darstellung), „Fokus heute“ und „Sonntag dieser Kirchenwoche“ unter Heute, vier Orte der Arena mit dem Treffen am Abendbrunnen, Wüstenzeit (Gewohnheiten unter Mehr → Gewohnheiten, Paket „Erbe“, Abhaken nur unter Heute), neue Lesepläne, Rückblick. Bildbeschreibungen angepasst.
+- Farben mit fester Aufgabe: Gold für den Morgen, Weiß für den Tag, Nachtblau für den Abend, Rot für die Rubriken „iPhone“ und „Android“, Dunkelblau für den Knopf. Horizontlinie mit der Sonne als Trenner.
+- Darunter „Was Henoch ist“, Grundsätze und Neuigkeiten nebeneinander.
+- Unterseiten (Impressum, Datenschutz, Anleitung, Archiv, Beiträge, 404) an die Startseite angeglichen: derselbe Kopf mit „Henoch“ links und dem Menü rechts statt „← Henoch“, die Textspalte beginnt an derselben linken Kante, über dem Fuß die Horizontlinie mit der Sonne. Der Fuß steht überall linksbündig. Inhalte unverändert.
+- Eigene Datei `startseite.css`; der gemeinsame Rahmen (Kopf, Kante, Fuß) steht in `style.css` und noch einmal eingebettet in `anleitung/index.html`. Texte unverändert.
+
 ## 1.5.2 – 23. Oktober 2026
 
 - Beitrag „Ankommen, bleiben, lesen, zuhören“: Die Begrüßung nennt jetzt auch den Ehemann, der mit seiner Frau ins Gespräch kommen will, und den Abend zu zweit.
