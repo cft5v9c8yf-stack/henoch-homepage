@@ -1,5 +1,9 @@
 # Changelog Homepage henoch.app
 
+## 2.0.1 – 12. November 2026
+
+- Startseite: Bei „Am Abend“ wird nur noch das Bildschirmfoto dunkel, der Kasten darum bleibt hell.
+
 ## 2.0.0 – 12. November 2026
 
 Neue Gestaltung der Startseite: alles auf einen Blick.
