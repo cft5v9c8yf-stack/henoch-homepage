@@ -17,9 +17,13 @@ Reines HTML und CSS, ohne Build-Schritt und ohne Abhängigkeiten. Veröffentlich
 | `style.css` | Farben, Schriften und Layout wie in der App, hell und dunkel; dazu der Rahmen aller Seiten (Kopf mit Menü, linke Kante, Fuß). Die Anleitung bettet denselben Rahmen in ihrem eigenen `<style>` ein; bei Änderungen beide Stellen anpassen. |
 | `kontakt.js` | setzt die Kontaktadresse erst im Browser zusammen |
 | `fonts/` | Literata und Source Sans 3 (SIL Open Font License) |
-| `bilder/` | Bildschirmfotos der App, je hell und `-dunkel` (780 × 1540, JPG). `leiste-*.png` sind die freigestellten Symbole der unteren Leiste (780 × 164); die Startseite legt sie halb durchsichtig über das Foto. Bei neuen Fotos neu erzeugen. |
+| `bilder/` | Bildschirmfotos der App für die Startseite, je hell und `-dunkel` (780 × 1540, JPG) |
 | `og.png`, `favicon.svg`, `apple-touch-icon.png`, `logo.svg` | Vorschaubild, Symbole, Kopfgrafik |
 | `robots.txt`, `sitemap.xml` | für Suchmaschinen |
+
+## Bildschirmfotos
+
+Alle Bildschirmfotos (Startseite, Anleitung, Beitrag „Ankommen, bleiben, lesen, zuhören“) stammen aus der Demo-Fassung der App (`tagzeiten`, Zweig `vorschau`, Version 1.39.1, `npm run build:demo`), aufgenommen bei 390 Punkten Breite in doppelter Auflösung, mit ausgeblendetem Demo-Hinweis. Jedes Foto gibt es hell und als `-dunkel`; die Seiten zeigen je nach Farbmodus des Geräts das passende.
 
 ## Beiträge unter Neuigkeiten
 

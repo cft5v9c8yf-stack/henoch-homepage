@@ -7,7 +7,7 @@ Neue Gestaltung der Startseite: alles auf einen Blick.
 - Oben links Titel „Mit Gott durch den Tag.“, der Knopf „Henoch öffnen“ und darunter die Installation für iPhone und Android. Der Knopf steht damit nur noch einmal auf der Seite.
 - Oben rechts die App mit dem Umschalter „Am Morgen / Über den Tag / Am Abend“, ohne JavaScript. Jede Stellung zeigt ein Bildschirmfoto und die zugehörigen Funktionen.
 - Bildschirmfotos passend zur Stellung und zum Farbmodus: Morgen „Heute“, Tag „Wort“, Abend „Arena“ in der dunklen Ansicht; Morgen und Tag wechseln im Dunkelmodus auf die dunklen Fotos.
-- Die untere Leiste der App liegt wie in der App halb durchsichtig über dem Bildschirm: Das Foto endet über der Leiste, die Symbole sind aus den Fotos freigestellt (`bilder/leiste-*.png`).
+- Alle 31 Bildschirmfotos neu aus der Vorschau der App (Version 1.39.1), je hell und dunkel, mit der schwebenden Glas-Leiste. Startseite, Anleitung und der Beitrag „Ankommen, bleiben, lesen, zuhören“ zeigen im Dunkelmodus die dunklen Fotos.
 - Farben mit fester Aufgabe: Gold für den Morgen, Weiß für den Tag, Nachtblau für den Abend, Rot für die Rubriken „iPhone“ und „Android“, Dunkelblau für den Knopf. Horizontlinie mit der Sonne als Trenner.
 - Darunter „Was Henoch ist“, Grundsätze und Neuigkeiten nebeneinander.
 - Unterseiten (Impressum, Datenschutz, Anleitung, Archiv, Beiträge, 404) an die Startseite angeglichen: derselbe Kopf mit „Henoch“ links und dem Menü rechts statt „← Henoch“, die Textspalte beginnt an derselben linken Kante, über dem Fuß die Horizontlinie mit der Sonne. Der Fuß steht überall linksbündig. Inhalte unverändert.

@@ -30,12 +30,8 @@ main ul{margin:0;padding:0;list-style:none}
 .buehne{min-width:0}.blick>*{min-width:0}
 #b1:checked~.panels .p1,#b2:checked~.panels .p2,#b3:checked~.panels .p3{display:grid}
 .geraet{margin:0 auto;width:min(100%,230px);padding:6px;border-radius:32px;background:#1d2330;box-shadow:0 0 0 1px var(--rule)}
-/* Bildschirmfoto 780 × 1540: Die Leiste des Fotos beginnt bei Zeile 1398, ihr Kreis ragt bis 1376 hinauf.
-   Das Foto wird deshalb bei 1376 abgeschnitten; darüber liegt die 142 px hohe durchsichtige Leiste. */
-.schirm{position:relative;overflow:hidden;border-radius:26px;aspect-ratio:780/1376}
+.schirm{overflow:hidden;border-radius:26px}
 .schirm img{display:block;width:100%;height:auto}
-.leiste{position:absolute;left:0;right:0;bottom:0;height:calc(142 / 1376 * 100%);background:color-mix(in srgb,var(--sheet) 62%,transparent);-webkit-backdrop-filter:blur(5px) saturate(1.3);backdrop-filter:blur(5px) saturate(1.3);border-top:1px solid var(--rule)}
-.schirm .leiste-symbole{position:absolute;left:0;bottom:0}
 .tile-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--ib,var(--gold-soft));color:var(--icon-gold)}
 .tile-icon svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .features li{display:grid;grid-template-columns:40px 1fr;gap:2px 14px;padding:14px 0;border-bottom:1px solid var(--rule)}
