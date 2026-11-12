@@ -17,7 +17,7 @@ Reines HTML und CSS, ohne Build-Schritt und ohne Abhängigkeiten. Veröffentlich
 | `style.css` | Farben, Schriften und Layout wie in der App, hell und dunkel |
 | `kontakt.js` | setzt die Kontaktadresse erst im Browser zusammen |
 | `fonts/` | Literata und Source Sans 3 (SIL Open Font License) |
-| `bilder/` | Bildschirmfotos der App, je hell und `-dunkel` (780 × 1540, JPG) |
+| `bilder/` | Bildschirmfotos der App, je hell und `-dunkel` (780 × 1540, JPG). `leiste-*.png` sind die freigestellten Symbole der unteren Leiste (780 × 164); die Startseite legt sie halb durchsichtig über das Foto. Bei neuen Fotos neu erzeugen. |
 | `og.png`, `favicon.svg`, `apple-touch-icon.png`, `logo.svg` | Vorschaubild, Symbole, Kopfgrafik |
 | `robots.txt`, `sitemap.xml` | für Suchmaschinen |
 
