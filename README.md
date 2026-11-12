@@ -13,7 +13,7 @@ Reines HTML und CSS, ohne Build-Schritt und ohne Abhängigkeiten. Veröffentlich
 | `index.html` | Startseite. Der Link zur App steht an zwei Stellen, beide als Knopf „Henoch öffnen“: im Kopf und unter „So installierst du Henoch“. Bei einer neuen Adresse beide ändern. |
 | `anleitung/` | Anleitung „Henoch Schritt für Schritt“ mit eigenen Bildschirmfotos in `anleitung/img/` |
 | `impressum.html`, `datenschutz.html`, `404.html` | Unterseiten |
-| `startseite.css` | Gestaltung der Startseite (Kopf mit Tagesbogen, Abschnitte); nur von `index.html` geladen |
+| `startseite.css` | Gestaltung der Startseite in der Formensprache der App; nur von `index.html` geladen. Die Startseite zeigt auch drei Bildschirmfotos aus `anleitung/img/` |
 | `style.css` | Farben, Schriften und Layout wie in der App, hell und dunkel |
 | `kontakt.js` | setzt die Kontaktadresse erst im Browser zusammen |
 | `fonts/` | Literata und Source Sans 3 (SIL Open Font License) |
