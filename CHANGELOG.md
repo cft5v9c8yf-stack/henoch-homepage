@@ -10,7 +10,8 @@ Neue Gestaltung der Startseite: alles auf einen Blick.
 - Die untere Leiste der App liegt wie in der App halb durchsichtig über dem Bildschirm: Das Foto endet über der Leiste, die Symbole sind aus den Fotos freigestellt (`bilder/leiste-*.png`).
 - Farben mit fester Aufgabe: Gold für den Morgen, Weiß für den Tag, Nachtblau für den Abend, Rot für die Rubriken „iPhone“ und „Android“, Dunkelblau für den Knopf. Horizontlinie mit der Sonne als Trenner.
 - Darunter „Was Henoch ist“, Grundsätze und Neuigkeiten nebeneinander.
-- Eigene Datei `startseite.css`; aus `style.css` sind die nur für die Startseite benutzten Regeln entfernt. Unterseiten unverändert. Texte unverändert.
+- Unterseiten (Impressum, Datenschutz, Anleitung, Archiv, Beiträge, 404) an die Startseite angeglichen: derselbe Kopf mit „Henoch“ links und dem Menü rechts statt „← Henoch“, die Textspalte beginnt an derselben linken Kante, über dem Fuß die Horizontlinie mit der Sonne. Der Fuß steht überall linksbündig. Inhalte unverändert.
+- Eigene Datei `startseite.css`; der gemeinsame Rahmen (Kopf, Kante, Fuß) steht in `style.css` und noch einmal eingebettet in `anleitung/index.html`. Texte unverändert.
 
 ## 1.5.2 – 23. Oktober 2026
 

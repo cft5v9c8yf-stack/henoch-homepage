@@ -14,7 +14,7 @@ Reines HTML und CSS, ohne Build-Schritt und ohne Abhängigkeiten. Veröffentlich
 | `anleitung/` | Anleitung „Henoch Schritt für Schritt“ mit eigenen Bildschirmfotos in `anleitung/img/` |
 | `impressum.html`, `datenschutz.html`, `404.html` | Unterseiten |
 | `startseite.css` | Gestaltung der Startseite; nur von `index.html` geladen. Farben mit fester Aufgabe: Gold für den Morgen, Weiß für den Tag, Nachtblau für den Abend, Rot für Rubriken. |
-| `style.css` | Farben, Schriften und Layout wie in der App, hell und dunkel |
+| `style.css` | Farben, Schriften und Layout wie in der App, hell und dunkel; dazu der Rahmen aller Seiten (Kopf mit Menü, linke Kante, Fuß). Die Anleitung bettet denselben Rahmen in ihrem eigenen `<style>` ein; bei Änderungen beide Stellen anpassen. |
 | `kontakt.js` | setzt die Kontaktadresse erst im Browser zusammen |
 | `fonts/` | Literata und Source Sans 3 (SIL Open Font License) |
 | `bilder/` | Bildschirmfotos der App, je hell und `-dunkel` (780 × 1540, JPG). `leiste-*.png` sind die freigestellten Symbole der unteren Leiste (780 × 164); die Startseite legt sie halb durchsichtig über das Foto. Bei neuen Fotos neu erzeugen. |

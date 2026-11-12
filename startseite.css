@@ -2,14 +2,9 @@
    Alles auf einen Blick: links worum es geht und wie man anfängt, rechts die App, umschaltbar nach Tageszeit.
    Farben mit fester Aufgabe: Gold = Morgen, Weiß = Tag, Nachtblau = Abend, Rot = Rubrik, Dunkelblau = Knopf. */
 
-.bar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 0 0}
-.brand{font-size:1.3rem;font-weight:600;color:var(--ink);text-decoration:none}
-.bar-r{display:flex;gap:26px}.bar-r a{font:600 1rem/1 var(--sans);color:var(--ink);text-decoration:none;padding:10px 0}
-.bar-r a:hover{text-decoration:underline;text-underline-offset:4px}
-.w{max-width:var(--max);margin:0 auto;padding-left:max(var(--pad),env(safe-area-inset-left,0px));padding-right:max(var(--pad),env(safe-area-inset-right,0px))}
-ul{margin:0;padding:0;list-style:none}
+main ul{margin:0;padding:0;list-style:none}
 
-.vb{--max:1280px;--pad:clamp(18px,3.2vw,44px);background:var(--paper)}
+.vb{background:var(--paper)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
 .vb section{border:0;padding:0}
 .blick{display:grid;gap:36px;padding:clamp(24px,4vw,44px) 0 clamp(56px,7vw,76px)}
