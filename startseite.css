@@ -1,176 +1,65 @@
 /* Startseite (nur index.html). Farben, Schriften und Abstände kommen aus style.css.
-   Leitbild: die Formensprache der App – Papier, weiße Karten, feine Linien, der Tagesbogen. */
+   Alles auf einen Blick: links worum es geht und wie man anfängt, rechts die App, umschaltbar nach Tageszeit.
+   Farben mit fester Aufgabe: Gold = Morgen, Weiß = Tag, Nachtblau = Abend, Rot = Rubrik, Dunkelblau = Knopf. */
 
-:root {
-  --max: 1360px;
-  --pad: clamp(18px, 3.2vw, 44px);
-}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 0 0}
+.brand{font-size:1.3rem;font-weight:600;color:var(--ink);text-decoration:none}
+.bar-r{display:flex;gap:26px}.bar-r a{font:600 1rem/1 var(--sans);color:var(--ink);text-decoration:none;padding:10px 0}
+.bar-r a:hover{text-decoration:underline;text-underline-offset:4px}
+.w{max-width:var(--max);margin:0 auto;padding-left:max(var(--pad),env(safe-area-inset-left,0px));padding-right:max(var(--pad),env(safe-area-inset-right,0px))}
+ul{margin:0;padding:0;list-style:none}
 
-.start { overflow-x: hidden; }
-.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-.w { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+.vb{--max:1280px;--pad:clamp(18px,3.2vw,44px);background:var(--paper)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.vb section{border:0;padding:0}
+.blick{display:grid;gap:36px;padding:clamp(24px,4vw,44px) 0 clamp(56px,7vw,76px)}
+.blick h1{margin:0;font-size:clamp(2.4rem,4.8vw,3.9rem);font-weight:600;line-height:1.02;letter-spacing:-.025em;text-wrap:balance}
+.sub{margin:18px 0 24px;font-size:1.15rem;line-height:1.5;max-width:26em}
 
-/* ---------- Kopf ---------- */
-.hero {
-  position: relative;
-  overflow: hidden;
-  padding: 0;
-  border: 0;
-  background: var(--paper);
-}
-.bar {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  padding-top: calc(28px + env(safe-area-inset-top));
-}
-.brand {
-  margin-right: 8px;
-  font-size: 1.25rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  color: var(--ink);
-  text-decoration: none;
-}
-.bar a:not(.brand) {
-  display: inline-block;
-  padding: 10px 0;
-  font-family: var(--sans);
-  font-weight: 600;
-  font-size: 1rem;
-  color: var(--ink);
-  text-decoration: none;
-}
-.bar a:not(.brand):hover { text-decoration: underline; text-underline-offset: 4px; }
-
-.hero-grid { display: grid; gap: 0; padding-bottom: 0; }
-.hero-copy { padding: clamp(36px, 7vw, 72px) 0 32px; position: relative; z-index: 2; }
-.hero h1 {
-  margin: 0;
-  font-size: clamp(2.6rem, 10.5vw, 4rem);
-  font-weight: 600;
-  line-height: 1.03;
-  letter-spacing: -0.025em;
-  color: var(--ink);
-  text-wrap: balance;
-}
-.hero-copy p {
-  margin: 22px 0 0;
-  max-width: 24em;
-  font-size: clamp(1.1rem, 4.4vw, 1.3rem);
-  line-height: 1.5;
-  color: var(--ink);
-}
-.hero .button { margin-top: 30px; }
-
-.phones { position: relative; height: clamp(430px, 112vw, 600px); }
-.phone {
-  position: absolute;
-  margin: 0;
-  width: 60%;
-  max-width: 330px;
-  padding: 6px;
-  border-radius: 34px;
-  background: #1d2330;
-  box-shadow: 0 34px 70px -10px rgb(10 14 22 / .45);
-}
-.phone img { display: block; width: 100%; height: auto; border-radius: 28px; aspect-ratio: 780 / 1540; }
-.phone-1 { left: 3%; top: 0; transform: rotate(-3deg); z-index: 2; }
-.phone-2 { left: 38%; top: 70px; transform: rotate(3deg); background: #0a0e16; }
-
-@media (min-width: 900px) {
-  .hero {
-    height: clamp(680px, 100svh, 900px);
-  }
-  .hero > .w { height: 100%; display: flex; flex-direction: column; }
-  .hero-grid { flex: 1; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; min-height: 0; }
-  .hero-copy { padding: 0 0 40px; }
-  .phones { height: 100%; align-self: stretch; }
-  .phone { width: 62%; max-width: 440px; padding: 8px; border-radius: 44px; }
-  .phone img { border-radius: 36px; }
-  .phone-1 { left: 0; top: 14%; }
-  .phone-2 { left: 40%; top: 27%; }
-}
-
-
-/* ---------- Wie die App: Papier, weiße Karten, feine Linien, Goldton nur als Akzent ---------- */
-.start { background: var(--paper); }
-.hero > .w { position: relative; z-index: 1; }
-/* Sonne über dem Horizont mit den drei Bögen, wie Logo und Begrüßungsschirm der App */
-/* Übergänge wie die Leiste am unteren Rand der App: halb durchsichtig, der Inhalt läuft darunter weiter */
-.start { --leiste: 60px; }
-.hero::after, .zeit .karte::after {
-  content: ""; position: absolute; left: 0; right: 0; bottom: 0; z-index: 2;
-  height: var(--leiste);
-  background: color-mix(in srgb, var(--sheet) 68%, transparent);
-  -webkit-backdrop-filter: blur(10px) saturate(1.3);
-  backdrop-filter: blur(10px) saturate(1.3);
-  border-top: 1px solid var(--rule);
-}
-.zeit .karte::after { height: 44px; }
-.sonne {
-  position: absolute; left: 50%; bottom: var(--leiste); width: 560px; height: 280px; margin-left: -280px;
-  background: radial-gradient(circle at 50% 100%, var(--sun) 0 88px, transparent 89px 150px, var(--rule) 151px 153px, transparent 154px 208px, var(--rule) 209px 211px, transparent 212px 268px, var(--rule) 269px 271px, transparent 272px);
-}
-@media (min-width: 900px) { .sonne { left: 47%; } }
-
-.start section { border-top: 0; padding: 0; }
-.start h2 { margin: 0 0 var(--s3); font-size: clamp(1.5rem, 3.4vw, 1.9rem); font-weight: 600; line-height: 1.12; letter-spacing: -0.02em; color: var(--ink); }
-.bogen-kopf { padding: clamp(40px, 5vw, 60px) 0 clamp(24px, 3.5vw, 36px); max-width: 46em; }
-.start .lead { margin: 0; font-size: 1.05rem; line-height: 1.6; }
-
-.karte { background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; }
-.karte.gold { background: var(--gold-soft); border-color: color-mix(in srgb, var(--sun) 45%, var(--rule)); }
-
-/* Tagesbogen der App: Linie mit drei Kreisen */
-.zeiten { display: grid; gap: 28px; }
-.zeit { display: flex; flex-direction: column; min-width: 0; }
-.zeit-kopf { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
-.punkt { flex: none; width: 13px; height: 13px; border: 1.5px solid var(--ink); border-radius: 50%; background: var(--paper); }
-.zeit-kopf h3 { margin: 0; font: 600 0.82rem/1.3 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
-.linie { flex: 1; height: 1.5px; background: var(--rule); }
-.zeit .karte { position: relative; flex: 1; display: flex; flex-direction: column; }
-
-.tile-icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--gold-soft); color: var(--icon-gold); }
-.tile-icon svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
-.features, .principles, .steps-2, .meldungen { margin: 0; padding: 0; list-style: none; }
-.features li { display: grid; grid-template-columns: 40px 1fr; gap: 2px 14px; padding: 16px 18px; border-bottom: 1px solid var(--rule); }
-.features .tile-icon { grid-row: span 2; }
-.features h4 { margin: 0; font-size: 1.08rem; font-weight: 600; line-height: 1.3; }
-.features p { margin: 0; color: var(--muted); font: 400 0.95rem/1.45 var(--sans); }
-
-.zeit-phone { margin: 28px auto 0; width: min(74%, 290px); height: 270px; overflow: hidden; padding: 7px 7px 0; border-radius: 36px 36px 0 0; background: #1d2330; }
-.zeit-phone img { display: block; width: 100%; height: auto; border-radius: 29px 29px 0 0; }
-.zeit .karte .zeit-phone { margin-top: auto; }
-.zeit .features { margin-bottom: 28px; }
-
-.start section.unten { padding: clamp(40px, 5vw, 60px) 0 clamp(44px, 5.5vw, 64px); }
-.unten h2 { font-size: 1.3rem; margin-bottom: 12px; }
-.drei { display: grid; gap: 32px; }
-.principles li { padding: 14px 18px; border-bottom: 1px solid var(--rule); }
-.principles li:last-child, .meldungen li:last-child { border-bottom: 0; }
-.principles h4 { margin: 0 0 2px; font-size: 1.05rem; font-weight: 600; line-height: 1.3; }
-.principles p { margin: 0; color: var(--muted); font: 400 0.95rem/1.45 var(--sans); }
-.steps-2 li { padding: 14px 18px 0; }
-.steps-2 h4 { margin: 0 0 3px; font: 600 0.75rem/1.3 var(--sans); letter-spacing: 0.12em; text-transform: uppercase; color: var(--link); }
-.steps-2 p { margin: 0; font-size: 1rem; line-height: 1.5; }
-.start .cta { margin: 0; padding: 18px; }
-.start .cta .button { display: block; text-align: center; border-radius: var(--radius); }
-.meldungen li { border-bottom: 1px solid var(--rule); }
-.meldungen a { position: relative; display: grid; gap: 1px; padding: 13px 40px 13px 18px; color: var(--ink); text-decoration: none; }
-.meldungen a::after { content: "›"; position: absolute; right: 18px; top: 50%; transform: translateY(-50%); font: 400 1.3rem/1 var(--sans); color: var(--muted); }
-.meldungen .news-date { font: 600 0.75rem/1.4 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--link); }
-.meldungen .news-title { font-size: 1.05rem; font-weight: 600; line-height: 1.3; }
-.meldungen .news-text { color: var(--muted); font: 400 0.92rem/1.4 var(--sans); }
-.meldungen a:active { background: var(--gold-soft); }
-@media (hover: hover) { .meldungen a:hover { background: var(--gold-soft); } }
-
-@media (min-width: 900px) {
-  .zeiten, .drei { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: clamp(20px, 2.4vw, 32px); }
-  .zeit:not(:last-child) .linie { margin-right: calc(clamp(20px, 2.4vw, 32px) * -1 - 23px); }
-  .zeit:last-child .linie { visibility: hidden; }
-  .zeit-phone { height: 340px; }
-}
-@media (max-width: 899px) {
-  .linie { display: none; }
+.inst{margin-top:36px;padding-top:20px;border-top:1px solid var(--rule)}
+.vb h2{margin:0 0 10px;font-size:1.25rem;font-weight:600;line-height:1.2;color:var(--ink)}
+.principles h4{color:var(--ink)}
+.steps-2 li{padding:8px 0}
+.steps-2 h4{margin:0 0 1px;font:600 .75rem/1.3 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--rubric)}
+.steps-2 p{margin:0;font-size:.98rem;line-height:1.45}
+.buehne{background:var(--sheet);border:1px solid var(--rule);border-radius:16px;padding:18px;color:var(--ink);transition:background-color .25s ease,border-color .25s ease}
+/* Die Bühne folgt dem Tag: morgens Gold, tagsüber Weiß, abends das Nachtblau der dunklen App */
+.buehne:has(#b1:checked){background:var(--gold-soft);border-color:color-mix(in srgb,var(--sun) 45%,var(--rule));--ib:var(--sheet)}
+.buehne:has(#b3:checked){--sheet:#1b2432;--paper:#131a26;--ink:#e8e3d8;--muted:#9aa2af;--rule:#2c3748;--gold-soft:#2e2a1c;--icon-gold:#d9ae00;border-color:#131a26}
+@media(prefers-reduced-motion:reduce){.buehne{transition:none}}
+.seg{display:flex;width:fit-content;gap:2px;padding:4px;border:1px solid var(--rule);border-radius:999px;background:var(--paper);max-width:100%}
+.seg label{flex:1;text-align:center;padding:9px clamp(8px,3vw,18px);border:1.5px solid transparent;border-radius:999px;font:600 .95rem/1.2 var(--sans);color:var(--muted);cursor:pointer;white-space:nowrap}
+#b1:checked~.seg label[for=b1],#b2:checked~.seg label[for=b2],#b3:checked~.seg label[for=b3]{background:var(--gold-soft);border-color:var(--icon-gold);color:var(--ink)}
+#b1:focus-visible~.seg label[for=b1],#b2:focus-visible~.seg label[for=b2],#b3:focus-visible~.seg label[for=b3]{outline:2px solid var(--accent);outline-offset:2px}
+.panel{display:none;gap:22px;margin-top:18px;min-width:0}
+.buehne{min-width:0}.blick>*{min-width:0}
+#b1:checked~.panels .p1,#b2:checked~.panels .p2,#b3:checked~.panels .p3{display:grid}
+.geraet{margin:0 auto;width:min(100%,230px);padding:6px;border-radius:32px;background:#1d2330;box-shadow:0 0 0 1px var(--rule)}
+.geraet img{display:block;width:100%;height:auto;border-radius:26px}
+.tile-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--ib,var(--gold-soft));color:var(--icon-gold)}
+.tile-icon svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.features li{display:grid;grid-template-columns:40px 1fr;gap:2px 14px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.features li:last-child{border-bottom:0}
+.features .tile-icon{grid-row:span 2}
+.features h3{margin:0;font-size:1.12rem;font-weight:600;line-height:1.3;color:var(--ink)}
+.features p{margin:0;color:var(--muted);font:400 .98rem/1.45 var(--sans)}
+.mehr{position:relative;display:grid;gap:32px;padding:36px 0 56px;border-top:2px solid var(--ink)}
+.mehr::before{content:"";position:absolute;right:8%;bottom:100%;margin-bottom:2px;width:84px;height:42px;border-radius:84px 84px 0 0;background:var(--sun)}
+.vb section.mehr{padding:36px 0 56px;border-top:2px solid var(--ink)}
+.mehr .lead{margin:0;font-size:1rem;line-height:1.6}
+.mehr li{padding:10px 0;border-top:1px solid var(--rule)}
+.principles h4{margin:0 0 2px;font-size:1.03rem;font-weight:600}
+.principles p,.meldungen .news-text{margin:0;color:var(--muted);font:400 .93rem/1.45 var(--sans)}
+.meldungen a{display:grid;gap:1px;color:var(--ink);text-decoration:none}
+.meldungen .news-date{font:600 .73rem/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--link)}
+.meldungen .news-title{font-size:1.03rem;font-weight:600;line-height:1.3}
+@media(hover:hover){.meldungen a:hover .news-title{color:var(--link)}}
+.meldungen .archive .news-title::after{content:" →"}
+@media(min-width:900px){
+  .blick{grid-template-columns:5fr 7fr;gap:56px;align-items:start}
+  .links{padding-top:28px}
+  .buehne{padding:22px 26px 26px}
+  .panel{grid-template-columns:250px 1fr;gap:32px;align-items:center}
+  .geraet{width:250px}
+  .mehr{grid-template-columns:5fr 3.5fr 3.5fr;gap:48px}
 }

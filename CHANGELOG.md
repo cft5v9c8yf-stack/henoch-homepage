@@ -2,15 +2,14 @@
 
 ## 2.0.0 – Entwurf, noch nicht veröffentlicht
 
-Neue Gestaltung der Startseite in der Formensprache der App.
+Neue Gestaltung der Startseite: alles auf einen Blick.
 
-- Kopf: großer Titel „Mit Gott durch den Tag.“, die App in heller und dunkler Ansicht, dahinter die Sonne mit den drei Bögen über dem Horizont wie im Logo.
-- „Was Henoch ist“: die sieben Funktionen in drei Karten nach Tageszeit (Am Morgen, Über den Tag, Am Abend), verbunden durch die Linie mit den Kreisen aus dem Tagesbogen der App; unter jeder Karte der passende Bildschirm aus der Anleitung.
-- Darunter drei Karten nebeneinander: Grundsätze, Installation (goldgetönt, mit dem Knopf „Henoch öffnen“) und Neuigkeiten als Zeilen mit Pfeil.
-- Übergänge wie die Leiste am unteren Rand der App: Am Ende des Kopfes und der drei Karten läuft der Inhalt unter einem halb durchsichtigen Streifen weiter.
-- Volle Breite, am Handy untereinander; hell und dunkel wie die App.
-- Eigene Datei `startseite.css`; aus `style.css` sind die nur für die Startseite benutzten Regeln entfernt. Unterseiten unverändert.
-- Texte, Adressen und Anzahl der App-Links (zwei) unverändert.
+- Oben links Titel „Mit Gott durch den Tag.“, der Knopf „Henoch öffnen“ und darunter die Installation für iPhone und Android. Der Knopf steht damit nur noch einmal auf der Seite.
+- Oben rechts die App mit dem Umschalter „Am Morgen / Über den Tag / Am Abend“, ohne JavaScript. Jede Stellung zeigt ein Bildschirmfoto und die zugehörigen Funktionen.
+- Bildschirmfotos passend zur Stellung und zum Farbmodus: Morgen „Heute“, Tag „Wort“, Abend „Arena“ in der dunklen Ansicht; Morgen und Tag wechseln im Dunkelmodus auf die dunklen Fotos.
+- Farben mit fester Aufgabe: Gold für den Morgen, Weiß für den Tag, Nachtblau für den Abend, Rot für die Rubriken „iPhone“ und „Android“, Dunkelblau für den Knopf. Horizontlinie mit der Sonne als Trenner.
+- Darunter „Was Henoch ist“, Grundsätze und Neuigkeiten nebeneinander.
+- Eigene Datei `startseite.css`; aus `style.css` sind die nur für die Startseite benutzten Regeln entfernt. Unterseiten unverändert. Texte unverändert.
 
 ## 1.5.2 – 23. Oktober 2026
 

@@ -10,10 +10,10 @@ Reines HTML und CSS, ohne Build-Schritt und ohne Abhängigkeiten. Veröffentlich
 
 | Datei | Inhalt |
 |---|---|
-| `index.html` | Startseite. Der Link zur App steht an zwei Stellen, beide als Knopf „Henoch öffnen“: im Kopf und unter „So installierst du Henoch“. Bei einer neuen Adresse beide ändern. |
+| `index.html` | Startseite. Der Link zur App steht einmal, als Knopf „Henoch öffnen“ oben links. Der Umschalter „Am Morgen / Über den Tag / Am Abend“ läuft ohne JavaScript und zeigt je ein Bildschirmfoto aus `bilder/`. |
 | `anleitung/` | Anleitung „Henoch Schritt für Schritt“ mit eigenen Bildschirmfotos in `anleitung/img/` |
 | `impressum.html`, `datenschutz.html`, `404.html` | Unterseiten |
-| `startseite.css` | Gestaltung der Startseite in der Formensprache der App; nur von `index.html` geladen. Die Startseite zeigt auch drei Bildschirmfotos aus `anleitung/img/` |
+| `startseite.css` | Gestaltung der Startseite; nur von `index.html` geladen. Farben mit fester Aufgabe: Gold für den Morgen, Weiß für den Tag, Nachtblau für den Abend, Rot für Rubriken. |
 | `style.css` | Farben, Schriften und Layout wie in der App, hell und dunkel |
 | `kontakt.js` | setzt die Kontaktadresse erst im Browser zusammen |
 | `fonts/` | Literata und Source Sans 3 (SIL Open Font License) |
