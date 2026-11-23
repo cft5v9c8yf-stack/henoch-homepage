@@ -53,51 +53,18 @@
       </ul>
       </div>
     </div>
-    <!-- Umschalter ohne JavaScript: drei Radioknöpfe, die Stellung färbt die Fläche (Morgen Gold, Tag und Abend Weiß) -->
-    <div class="buehne" role="group" aria-label="Henoch durch den Tag">
-        <input class="sr" type="radio" name="zeit" id="b1" checked>
-        <input class="sr" type="radio" name="zeit" id="b2">
-        <input class="sr" type="radio" name="zeit" id="b3">
-        <div class="seg"><label for="b1">Am Morgen</label><label for="b2">Über den Tag</label><label for="b3">Am Abend</label></div>
-        <div class="panels">
-          <div class="panel p1">
-            <ul class="features">
-              <li><span class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-1.6 2-2.5 5-2.5 8.5V16l-3.5 4.5M12 3c1.6 2 2.5 5 2.5 8.5V16l3.5 4.5M12 5v12"/></svg></span><h3>Gebetsordnung</h3><p>Morgens und abends beten – mit einer festen Ordnung, die auch an vollen Tagen trägt. Auf Wunsch mit der geistlichen Waffenrüstung aus Epheser&nbsp;6.</p></li>
-              <li><span class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5h11a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6.5A1.5 1.5 0 0 1 5 19V5a1.5 1.5 0 0 1 1-1.5Z"/><path d="M11.5 7v7M9 9.5h5"/></svg></span><h3>Bibellese</h3><p>Die Bibel Abschnitt für Abschnitt lesen. Setzt du aus, machst du einfach weiter.</p></li>
-            </ul>
-          </div>
-          <div class="panel p2">
-            <ul class="features">
-              <li><span class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17a5 5 0 0 1 10 0M2 17h20M12 4v4M9.5 6.5 12 4l2.5 2.5M4.5 10.5l1.6 1.2M19.5 10.5l-1.6 1.2"/></svg></span><h3>Gewohnheiten</h3><p>Tischgebet, Gottesdienst, Abendmahl: im Blick behalten, was dir wichtig ist.</p></li>
-              <li><span class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 11 12 4l8.5 7M6 9v11h12V9M10 20v-5.5h4V20"/></svg></span><h3>Mein Haus</h3><p>Für die Menschen beten, die zu deinem Leben gehören, mit Namen und Tag für Tag.</p></li>
-              <li><span class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M7 8h10"/></svg></span><h3>Katechismus</h3><p>Luthers Kleinen Katechismus lernen, allein oder mit deiner Familie.</p></li>
-            </ul>
-          </div>
-          <div class="panel p3">
-            <ul class="features">
-              <li><span class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11h6v10H9zM12 11V8.5M12 3.5c1.3 1.5 1.7 2.6 1 3.6a1.2 1.2 0 0 1-2 0c-.7-1 0-2.1 1-3.6Z"/></svg></span><h3>Gebetskammer</h3><p>Aufschreiben, was dich belastet, wofür du dankst und wofür du betest.</p></li>
-              <li><span class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2 19 6v5.2c0 4.6-3 8-7 9.6-4-1.6-7-5-7-9.6V6l7-2.8Z"/><path d="M12 8v8M9 11h6"/></svg></span><h3>Arena</h3><p>Treffen mit Brüdern vorbereiten und in einer Wüstenzeit von 40 oder 90&nbsp;Tagen dranbleiben.</p></li>
-            </ul>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <!-- Film: hell und dunkel je ein eigenes Video, CSS zeigt das passende. Lädt erst beim Abspielen. Nur Musik, kein Text. -->
-  <section class="film" aria-label="Henoch in 30 Sekunden">
-    <div class="film-bild">
+    <!-- Film: hell und dunkel je ein eigenes Video, CSS zeigt das passende. Lädt erst beim Abspielen. Nur Musik, kein Text. -->
+    <div class="film">
+      <div class="film-bild">
       <video class="film-hell" controls playsinline preload="none" poster="film/henoch-30s.jpg" width="720" height="1280" aria-label="Henoch in 30 Sekunden: Dein Tag, dein Gebetbuch, dein Leseplan, dein Sonntag">
         <source src="film/henoch-30s.mp4" type="video/mp4">
       </video>
       <video class="film-dunkel" controls playsinline preload="none" poster="film/henoch-30s-dunkel.jpg" width="720" height="1280" aria-label="Henoch in 30 Sekunden: Dein Tag, dein Gebetbuch, dein Leseplan, dein Sonntag">
         <source src="film/henoch-30s-dunkel.mp4" type="video/mp4">
       </video>
+      </div>
     </div>
-    <div class="film-text">
-      <p class="film-hinweis">Kurzfilm mit Musik, ohne Sprache.</p>
-      <p><a class="film-weiter" href="#installieren">So installierst du Henoch</a></p>
-    </div>
-  </section>
+  </div>
 
   <section class="mehr">
     <div>
