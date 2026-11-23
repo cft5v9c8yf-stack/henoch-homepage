@@ -1,5 +1,10 @@
 # Changelog Homepage henoch.app
 
+## 2.1.0 – 23. November 2026
+
+- Neuer Beitrag „Siehe, dein König kommt zu dir“: Wilhelm Löhes Predigt aus der Winterpostille zum 1. Advent über Matthäus 21,1–9, wortgetreu aus der Fraktur abgeschrieben (Rechtschreibung und Zeichensetzung wie im Original). Mit Grußwort, Hinweis zur Abschrift und Überblick über die drei Teile der Predigt. Auf der Startseite und im Archiv (neuer Monat November) eingetragen.
+- `style.css`: Versnummern im Bibeltext, Absätze und Trennlinien für längere Predigttexte.
+
 ## 2.0.1 – 12. November 2026
 
 - Startseite: Bei „Am Abend“ wird nur noch das Bildschirmfoto dunkel, der Kasten darum bleibt hell.

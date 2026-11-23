@@ -242,6 +242,10 @@ footer a { display: inline-block; padding: 10px 4px 10px 0; color: inherit; }
 .text .dates dt { font-weight: 600; font-variant-numeric: tabular-nums; }
 .text .dates dd { margin: 0; }
 .text .sources { font: 400 0.85rem/1.5 var(--sans); color: var(--muted); }
+.text .word sup { font: 600 0.65em/1 var(--sans); font-style: normal; color: var(--link); }
+.text .postille p { margin: 0 0 var(--s4); hyphens: auto; }
+.text .postille .quote { margin: var(--s4) 0; }
+.text hr.trenner { margin: 32px auto; width: 40%; border: 0; border-top: 1px solid var(--rule); }
 
 /* Archiv */
 .archive-year h2 { margin: 32px 0 4px; font-size: 1.5rem; }

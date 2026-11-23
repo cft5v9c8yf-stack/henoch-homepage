@@ -1,6 +1,6 @@
 # Henoch – Homepage
 
-Version 2.0.1 · live unter **https://henoch.app**
+Version 2.1.0 · live unter **https://henoch.app**
 
 Die Homepage stellt Henoch vor, einen Begleiter für Männer, die ihren Tag mit Gott beginnen und beschließen wollen, und führt zur App unter **https://mein.henoch.app**.
 
