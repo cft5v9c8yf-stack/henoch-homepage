@@ -17,7 +17,7 @@ Reines HTML und CSS, ohne Build-Schritt und ohne Abhängigkeiten. Veröffentlich
 | `style.css` | Farben, Schriften und Layout wie in der App, hell und dunkel; dazu der Rahmen aller Seiten (Kopf mit Menü, linke Kante, Fuß). Die Anleitung bettet denselben Rahmen in ihrem eigenen `<style>` ein; bei Änderungen beide Stellen anpassen. |
 | `kontakt.js` | setzt die Kontaktadresse erst im Browser zusammen |
 | `fonts/` | Literata und Source Sans 3 (SIL Open Font License) |
-| `film/` | Kurzfilm „Henoch in 30 Sekunden“, hell (`henoch-30s.mp4`) und dunkel (`-dunkel`), je mit Standbild (`.jpg`); 720 × 1280, H.264, nur Musik. Die Seite zeigt per CSS die zum Farbmodus passende Fassung. |
+| `film/` | Kurzfilm „Henoch in 30 Sekunden“, hell (`henoch-30s.mp4`) und dunkel (`-dunkel`), je mit Standbild (`.jpg`); 720 × 1280, H.264, nur Musik. Welche Fassung sichtbar ist, entscheidet die Tageszeit: 6–18 Uhr hell, sonst dunkel (kleines Skript im Kopf von `index.html`; ohne JavaScript der Farbmodus). |
 | `bilder/` | frühere Bildschirmfotos der Startseite; seit 2.1.0 nicht mehr verwendet |
 | `og.png`, `favicon.svg`, `apple-touch-icon.png`, `logo.svg` | Vorschaubild, Symbole, Kopfgrafik |
 | `robots.txt`, `sitemap.xml` | für Suchmaschinen |

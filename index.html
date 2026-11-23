@@ -28,6 +28,8 @@
   <link rel="preload" href="fonts/literata-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="startseite.css">
+  <!-- Kurzfilm nach Tageszeit: 6 bis 18 Uhr hell, sonst dunkel (Ortszeit des Geräts). Ohne JavaScript entscheidet der Farbmodus. -->
+  <script>(function(h){document.documentElement.dataset.film=h>=6&&h<18?"hell":"dunkel"})(new Date().getHours())</script>
 </head>
 <body class="vb">
 
@@ -53,7 +55,7 @@
       </ul>
       </div>
     </div>
-    <!-- Film: hell und dunkel je ein eigenes Video, CSS zeigt das passende. Lädt erst beim Abspielen. Nur Musik, kein Text. -->
+    <!-- Film: hell und dunkel je ein eigenes Video; welches sichtbar ist, entscheidet die Tageszeit (Skript im Kopf). Lädt erst beim Abspielen. Nur Musik, kein Text. -->
     <div class="film">
       <div class="film-bild">
       <video class="film-hell" controls playsinline preload="none" poster="film/henoch-30s.jpg" width="720" height="1280" aria-label="Henoch in 30 Sekunden: Dein Tag, dein Gebetbuch, dein Leseplan, dein Sonntag">

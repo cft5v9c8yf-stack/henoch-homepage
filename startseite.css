@@ -36,10 +36,15 @@ main ul{margin:0;padding:0;list-style:none}
   .mehr{grid-template-columns:5fr 3.5fr 3.5fr;gap:48px}
 }
 
-/* Kurzfilm: hell und dunkel je ein Video, nur das zum Farbmodus passende ist sichtbar */
+/* Kurzfilm: hell und dunkel je ein Video, nur eines ist sichtbar */
 .film{display:grid;justify-items:center}
 .film-bild{width:min(100%,320px,calc(75svh * 9 / 16))}
 .film video{display:block;width:100%;height:auto;aspect-ratio:9/16;border-radius:20px;background:var(--sheet);border:1px solid var(--rule);box-shadow:0 10px 30px -18px rgb(0 0 0/.35)}
 .film-dunkel{display:none!important}
 @media(prefers-color-scheme:dark){.film-hell{display:none!important}.film-dunkel{display:block!important}}
+/* Tageszeit geht vor Farbmodus: 6–18 Uhr hell, sonst dunkel (gesetzt im Kopf von index.html) */
+html[data-film=hell] .film-hell{display:block!important}
+html[data-film=hell] .film-dunkel{display:none!important}
+html[data-film=dunkel] .film-hell{display:none!important}
+html[data-film=dunkel] .film-dunkel{display:block!important}
 @media(min-width:900px){.film-bild{width:min(340px,calc(80svh * 9 / 16))}}

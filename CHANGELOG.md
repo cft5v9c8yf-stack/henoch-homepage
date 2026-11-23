@@ -5,7 +5,7 @@
 Startseite: Kurzfilm statt Umschalter.
 
 - Oben rechts steht jetzt der Kurzfilm „Henoch in 30 Sekunden“ (Dein Tag, Dein Gebetbuch, Dein Leseplan, Dein Sonntag), nur Musik, ohne Sprache. Auf dem Handy folgt er unter der Installation.
-- Hell und dunkel je eine eigene Fassung; die Seite zeigt die zum Farbmodus passende. Das Video startet erst auf Klick und wird erst dann geladen. Neuer Ordner `film/` (720 × 1280, je etwa 1,7 MB, mit Standbild).
+- Hell und dunkel je eine eigene Fassung, je nach Tageszeit: von 6 bis 18 Uhr (Ortszeit des Geräts) die helle, sonst die dunkle. Ohne JavaScript entscheidet der Farbmodus. Das Video startet erst auf Klick und wird erst dann geladen. Neuer Ordner `film/` (720 × 1280, je etwa 1,7 MB, mit Standbild).
 - Der Umschalter „Am Morgen / Über den Tag / Am Abend“ mit Bildschirmfotos und Funktionsbeschreibungen ist entfernt, ebenso die zugehörigen Regeln in `startseite.css`. Die Fotos in `bilder/` bleiben vorerst liegen, werden aber nicht mehr verwendet.
 
 ## 2.0.1 – 12. November 2026
